@@ -141,7 +141,7 @@ def main(input_file,
 if __name__ == '__main__':
 	# FeatureFile = 'data\\TurkishFeatures-tell.txt'
 	TrainingFile = 'data\\vowel_harmony.txt'
-	TestingFile = 'data\\TurkishTestingData.txt'
+	TestingFile = 'data\\vowel_harmony.txt' #TODO
 
 	main(TrainingFile,
 		TestingFile,
