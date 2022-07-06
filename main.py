@@ -125,7 +125,7 @@ def main(input_file,
 	sample = shuffled(get_txt_corpus_data(input_file))
 	phone2ix, ix2phone, training_data, dev = process_data(sample)
 	num_symbols = len(ix2phone)
-
+	print(sample)
 	'''The next two lines should be replaced with function of phonological feature induction'''
 	# feat, feature_dict, num_feats, feature_table, feat2ix, ix2feat = process_features(FeatureFile, alphabet, ix2phone)
 	# vowel = [x for x in feature_dict if feature_dict[x][feat2ix['syll']] == "+"] 
