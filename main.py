@@ -125,8 +125,10 @@ def main(input_file,
 	sample = shuffled(get_txt_corpus_data(input_file))
 	phone2ix, ix2phone, training_data, dev = process_data(sample)
 	num_symbols = len(ix2phone)
-	feat, feature_dict, num_feats, feature_table, feat2ix, ix2feat = process_features(FeatureFile, alphabet, ix2phone)
-	vowel = [x for x in feature_dict if feature_dict[x][feat2ix['syll']] == "+"] 
+
+	'''The next two lines should be replaced with function of phonological feature induction'''
+	# feat, feature_dict, num_feats, feature_table, feat2ix, ix2feat = process_features(FeatureFile, alphabet, ix2phone)
+	# vowel = [x for x in feature_dict if feature_dict[x][feat2ix['syll']] == "+"] 
 
 	d = kwds.copy()
 	print("Training data = ", input_file, file=sys.stderr)
@@ -137,6 +139,15 @@ def main(input_file,
 
 
 if __name__ == '__main__':
-	FeatureFile = 'data\\TurkishFeatures-tell.txt'
-	TrainingFile = 'data\\TurkishLearningData-tell.txt'
+	# FeatureFile = 'data\\TurkishFeatures-tell.txt'
+	TrainingFile = 'data\\vowel_harmony.txt'
 	TestingFile = 'data\\TurkishTestingData.txt'
+
+	main(TrainingFile,
+		TestingFile,
+		model_class=DEFAULT_NUM_STATES,
+		num_epochs=DEFAULT_NUM_EPOCHS,
+		num_samples=DEFAULT_NUM_SAMPLES,
+		print_every=DEFAULT_PRINT_EVERY,
+		seed=DEFAULT_DATA_SEED,
+		perm_test_num_samples=DEFAULT_PERM_TEST_NUM_SAMPLES)
