@@ -126,7 +126,8 @@ def main(input_file,
 	phone2ix, ix2phone, training_data, dev = process_data(sample)
 	num_symbols = len(ix2phone)
 	print(sample)
-	'''The next two lines should be replaced with function of phonological feature induction'''
+	
+	'''The next two lines should be replaced with function of phonological feature induction.'''
 	# feat, feature_dict, num_feats, feature_table, feat2ix, ix2feat = process_features(FeatureFile, alphabet, ix2phone)
 	# vowel = [x for x in feature_dict if feature_dict[x][feat2ix['syll']] == "+"] 
 
@@ -136,6 +137,11 @@ def main(input_file,
 	print("Training set size =", len(training_data), file=sys.stderr)
 	print("Dev set size =", len(dev), file=sys.stderr)
 	print("Segment inventory size = ", len(ix2phone), file=sys.stderr)
+
+	# Build LM
+
+	# Train LM 
+
 
 
 if __name__ == '__main__':
