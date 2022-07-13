@@ -145,7 +145,6 @@ def main(input_file,
 
 
 
-
 # TODO
 # 1. CMCL log-linear for word-embedding -> Sigma/Segment embedding 
 #  eliminating the clustering step vs not (not sure if categorization of class)
