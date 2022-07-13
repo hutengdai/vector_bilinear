@@ -144,6 +144,15 @@ def main(input_file,
 
 
 
+
+
+# TODO
+# 1. CMCL log-linear for word-embedding -> Sigma/Segment embedding 
+#  eliminating the clustering step vs not (not sure if categorization of class)
+# 2. Plug this to a phonotactic model 
+# 3.  take input data and output bigrams
+
+
 if __name__ == '__main__':
 	# FeatureFile = 'data\\TurkishFeatures-tell.txt'
 	TrainingFile = 'data\\vowel_harmony.txt'
