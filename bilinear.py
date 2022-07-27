@@ -385,6 +385,7 @@ def dev_split(train, dev):
     )
 
 def train(model, train_data, dev_data=None, test_data=None, w_vocab=None, c_vocab=None, batch_size=DEFAULT_BATCH_SIZE, num_iter=DEFAULT_NUM_ITER, check_every=DEFAULT_CHECK_EVERY, patience=DEFAULT_PATIENCE, data_on_device=False, **kwds):
+#  TODO Make a dev set to see the performance
 
     if data_on_device:
         train_data_minibatcher = IndexData(train_data.elements(), model)
