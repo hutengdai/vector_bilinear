@@ -7,24 +7,10 @@ ngrams_path="../distributional_learning/vector_data/parupa_bigram_ppmi_word2vec.
 
 source=".." 
 
-# echo "0. Making output directories and phone file"
-
-# ### Make output folders if needed ###
-# if [[ ! -e ${experiment_dir}/Communities/ ]]; then
-# 	mkdir ${experiment_dir}/Communities/
-# fi
-
-# if [[ ! -e ${experiment_dir}/Grammars/ ]]; then
-# 	mkdir ${experiment_dir}/Grammars/
-# fi
-
-# if [[ ! -e ${experiment_dir}/Judgements/ ]]; then
-# 	mkdir ${experiment_dir}/Judgements/
-# fi
-
 ### Fit a MaxEnt model ###
 
 echo "1. Fitting phonotactic grammar"
+
 
 python ${source}/bilinear.py ${w2v_path} ${ngrams_path} --no-encoders
 
