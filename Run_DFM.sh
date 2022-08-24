@@ -12,7 +12,7 @@ source=".."
 echo "1. Fitting phonotactic grammar"
 
 
-python ${source}/bilinear.py ${w2v_path} ${ngrams_path} --no-encoders
+python bilinear.py --no-encoders ${w2v_path} ${ngrams_path} 
 
 ### Test correlations with Daland Et Al judgements ###
 echo "2. Testing Daland Et Al correlations"
