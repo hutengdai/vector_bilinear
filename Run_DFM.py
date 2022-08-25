@@ -28,18 +28,24 @@ if __name__ == '__main__':
 	# dev = 
 
 
-	for i in range(1,10):
-		bilinear.main(vectors_filename,
-			train_filename,
-			dev_filename=None,
-			test_filename=None,
-			no_encoders=True,
-			batch_size=	2**i)
+	# for i in range(1,10):
+	# 	bilinear.main(vectors_filename,
+	# 		train_filename,
+	# 		dev_filename=None,
+	# 		test_filename=None,
+	# 		no_encoders=True,
+	# 		batch_size=	2**i)
 		
 		
 		# --no_encoders ${w2v_path} ${ngrams_path} --batch_size $i --num_iter $((num_sample/i))
 
-
+	bilinear.main(vectors_filename,
+		train_filename,
+		dev_filename=None,
+		test_filename=None,
+		no_encoders=True,
+		batch_size=	2)
+		
 
 
 	### Test correlations with Daland Et Al judgements ###
