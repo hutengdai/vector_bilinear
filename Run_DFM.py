@@ -4,8 +4,9 @@ import bilinear
 
 if __name__ == '__main__':
 	training_split = 80
-	vectors_filename="distributional_learning/vector_data/parupa_bigram_ppmi_word2vec.w2v"
-	train_filename="distributional_learning/vector_data/parupa_bigram_ppmi_word2vec.ngrams"
+	vectors_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v"
+	train_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1"
+	dev_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2"
 	token_filename="data/onset_tokens_arpa.txt"
 	# num_sample=`wc -l "data/onset_tokens_arpa.txt"`
 	# wc -l < data/onset_tokens_arpa.txt
@@ -41,7 +42,7 @@ if __name__ == '__main__':
 
 	bilinear.main(vectors_filename,
 		train_filename,
-		dev_filename=None,
+		dev_filename,
 		test_filename=None,
 		no_encoders=True,
 		batch_size=	2)
