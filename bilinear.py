@@ -1,6 +1,7 @@
 import sys
 import csv
 import time
+from pathlib import Path
 
 import math
 import random
@@ -615,6 +616,7 @@ def main(vectors_filename,
 		
 	model, diagnostics = train(model, train_data, dev_data=dev_data, test_data=test_data, w_vocab=vocab_words, c_vocab=vectors.word_indices, **kwds)
 	if output_filename is not None:
+		Path(output_filename).parent.mkdir(parents=True, exist_ok=True)
 		torch.save(model, output_filename)
 		
 	return model
