@@ -19,6 +19,7 @@ DEBUG = False
 INF = float('inf')
 UNK = "!!!<UNK>!!!"
 
+
 DEFAULT_NUM_ITER = 25000
 DEFAULT_STRUCTURE = str([300, 300, 300])
 DEFAULT_BATCH_SIZE = 32
@@ -27,7 +28,15 @@ DEFAULT_ACTIVATION = "relu"
 DEFAULT_CHECK_EVERY = 100
 DEFAULT_PATIENCE = None
 DEFAULT_DROPOUT = 0.0
-DEFAULT_FILENAME = "output/model_%s.pt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "_")
+# DEFAULT_FILENAME = "output/toy.pt"
+# DEFAULT_FILENAME = "output/model_%s.txt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "-")
+DEFAULT_FILENAME = r"output/model_%s.txt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "-")
+# Filename to write
+
+# Open the file with writing permission
+myfile = open(DEFAULT_FILENAME, 'r')
+
+
 EPSILON = 10 ** -7
 
 ACTIVATIONS = {
@@ -621,6 +630,8 @@ def main(vectors_filename,
 
 if __name__ == '__main__':
 	import argparse
+
+
 	parser = argparse.ArgumentParser(description='Estimate conditional word probabilities using a log-bilinear model')
 	parser.add_argument("vectors", type=str, help="Path to word vectors in word2vec format")
 	parser.add_argument("train", type=str, help="Path to file containing training counts of word pairs")

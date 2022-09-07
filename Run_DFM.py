@@ -49,3 +49,8 @@ if __name__ == '__main__':
 
 	### Test correlations with Daland Et Al judgements ###
 	# echo "2. Testing Daland Et Al correlations"
+
+	# Train the bilinear model on the onset ARPABET token data, trying a range of relevant hyperparameters to find the best fit
+# Test the data on the Daland et al onsets and get the output of the model in the format that Max's code expects
+# Run Max's code to calculate correlations between our model and the human judgements
+# Compare against results from Max's model
