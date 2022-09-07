@@ -1,5 +1,5 @@
 import bilinear
-
+import run_model_lm
 # python ${source}/daland_eval.py ${experiment_dir}/Judgements/${name}_${i} ${source}/data/Daland_etal_2011__AverageScores.csv 
 
 if __name__ == '__main__':
@@ -37,20 +37,28 @@ if __name__ == '__main__':
 	### Fit a MaxEnt model ###
 
 	print("1. Fitting phonotactic grammar")
-
+	output_filename= bilinear.DEFAULT_FILENAME
 	bilinear.main(vectors_filename,
 		train_filename,
 		dev_filename,
 		test_filename=None,
 		no_encoders=True,
-		batch_size=	2)
-		
+		batch_size=	2,
+		num_iter=3000,
+		output_filename=output_filename
+		)
+	
 
+	dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
+	out_filename = "data\\bilinear_judgement.txt"
+	run_model_lm.main(output_filename,dalandfile,out_filename)
 
 	### Test correlations with Daland Et Al judgements ###
 	# echo "2. Testing Daland Et Al correlations"
 
-	# Train the bilinear model on the onset ARPABET token data, trying a range of relevant hyperparameters to find the best fit
+# Train the bilinear model on the onset ARPABET token data, trying a range of relevant hyperparameters to find the best fit
 # Test the data on the Daland et al onsets and get the output of the model in the format that Max's code expects
 # Run Max's code to calculate correlations between our model and the human judgements
 # Compare against results from Max's model
+
+

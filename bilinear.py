@@ -31,12 +31,7 @@ DEFAULT_PATIENCE = None
 DEFAULT_DROPOUT = 0.0
 # DEFAULT_FILENAME = "output/toy.pt"
 # DEFAULT_FILENAME = "output/model_%s.txt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "-")
-DEFAULT_FILENAME = r"output/model_%s.txt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "-")
-# Filename to write
-
-# Open the file with writing permission
-myfile = open(DEFAULT_FILENAME, 'r')
-
+DEFAULT_FILENAME = "output/model_%s.txt" % str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
 
 EPSILON = 10 ** -7
 
