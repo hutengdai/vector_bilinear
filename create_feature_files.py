@@ -64,7 +64,7 @@ def convert_features_binary(feature):
     elif feature == '0':
         return [0, 0]
     else:
-        return IPA_ARPA_MAP[feature]
+        return [IPA_ARPA_MAP[feature]]
 
 def create_binary_contexts(feature_name):
     if feature_name:
