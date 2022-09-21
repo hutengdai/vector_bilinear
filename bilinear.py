@@ -623,7 +623,7 @@ def main(vectors_filename,
 		Path(output_filename).parent.mkdir(parents=True, exist_ok=True)
 		torch.save(model, output_filename)
 		
-	return model
+	return model, diagnostics
 
 if __name__ == '__main__':
 	import argparse
