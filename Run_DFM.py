@@ -38,22 +38,34 @@ if __name__ == '__main__':
 
 	print("1. Fitting phonotactic grammar")
 	output_filename= bilinear.DEFAULT_FILENAME
-	bilinear.main(vectors_filename,
-		train_filename,
-		dev_filename,
-		test_filename=None,
-		no_encoders=True,
-		batch_size=	2,
-		num_iter=3000,
-		output_filename=output_filename
-		)
-	
 
-	dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
-	out_filename = "data\\bilinear_judgement.txt"
-	run_model_lm.main(output_filename,dalandfile,out_filename)
 
-	### Test correlations with Daland Et Al judgements ###
+	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
+		for lr in [0.1, 0.01, 0.001, 0.0001]:
+			model, diagnostics = bilinear.main(vectors_filename,
+				train_filename,
+				dev_filename,
+				test_filename=None,
+				no_encoders=True,
+				batch_size=	batch_size,
+				lr = lr,
+				num_iter=200,
+				output_filename=output_filename
+				)
+			with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(batch_size),str(lr)), "w") as diagnostics_print:
+				for row in diagnostics:
+				# 	diagnostics_print.write(row+'\n')
+					print(row, file=diagnostics_print)
+
+
+
+	# dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
+	# out_filename = "data\\bilinear_judgement.txt"
+
+	## Test correlations with Daland Et Al judgements ###
+	# run_model_lm.main(output_filename,dalandfile,out_filename)
+
+
 	# echo "2. Testing Daland Et Al correlations"
 
 # Train the bilinear model on the onset ARPABET token data, trying a range of relevant hyperparameters to find the best fit
