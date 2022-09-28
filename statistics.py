@@ -1,8 +1,8 @@
 import pandas as pd
-
+import torch
 if __name__ == '__main__':
 	filepath = "hyperparameters"
-	
+	for files in filepath
 	data = pd.read_csv(
 			filepath,
 			sep="\t",
@@ -11,4 +11,5 @@ if __name__ == '__main__':
 		# shuffle
 	data.sample(frac=1)
 
-	print(data)		
+	print(data)
+	torch.eval()

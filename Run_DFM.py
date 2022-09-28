@@ -59,7 +59,29 @@ if __name__ == '__main__':
 	print("1. Fitting phonotactic grammar")
 	output_filename= bilinear.DEFAULT_FILENAME
 
+	# model, diagnostics = bilinear.main(vectors_filename,
+	# 				train_filename,
+	# 				dev_filename,
+	# 				test_filename=None,
+	# 				no_encoders=True,
+	# 				batch_size=	32,
+	# 				lr = 0.1,
+	# 				# num_iter=200,
+	# 				num_iter = 200,
+	# 				output_filename=output_filename
+	# 				)
+	# 			# breakpoint()
+	# with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(32),str(0.1)), "w") as diagnostics_print:
+	# 	# for row in diagnostics:
+	# 	a = pd.DataFrame(diagnostics)
+	# 	print(a)
+	# 	a["batch_size"] = 32
+	# 	a["lr"] = 0.1
+	# 	a["num_iter"] = 200
 
+	# 	breakpoint()
+
+	df = pd.DataFrame()
 	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
 		for lr in [0.1, 0.01, 0.001, 0.0001]:
 			model, diagnostics = bilinear.main(vectors_filename,
@@ -75,12 +97,17 @@ if __name__ == '__main__':
 				)
 			# breakpoint()
 			with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(batch_size),str(lr)), "w") as diagnostics_print:
-				for row in diagnostics:
-				# 	diagnostics_print.write(row+'\n')
-					print(row, file=diagnostics_print)
+				# for row in diagnostics:
+				a = pd.DataFrame(diagnostics)
+				print(a)
+				a["batch_size"] = batch_size
+				a["lr"] = lr
+				a["num_iter"] = int(training_data_size / batch_size)
+				df = df.append(a)
+				# diagnostics_print.write(row+'\n')
+				# print(row, file=diagnostics_print)
 
-
-
+# control R
 	# dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
 	# out_filename = "data\\bilinear_judgement.txt"
 
