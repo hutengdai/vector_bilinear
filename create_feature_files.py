@@ -95,9 +95,11 @@ with open('data/features/english_binary_features_columns.txt', 'w') as f:
     writer.writerow(binary_contexts)
 
 with open('data/features/english_binary_features.w2v', 'w') as f:
-    writer = csv.writer(f)
+    writer = csv.writer(f, delimiter=' ')
+    writer.writerow([len(binary_output), len(binary_output[0]) - 1])
     writer.writerows(binary_output)
 
 with open('data/features/english_trinary_features.w2v', 'w') as f:
-    writer = csv.writer(f)
+    writer = csv.writer(f, delimiter=' ')
+    writer.writerow([len(trinary_output), len(trinary_output[0]) - 1])
     writer.writerows(trinary_output)
