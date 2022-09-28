@@ -9,6 +9,6 @@ if __name__ == '__main__':
 			# header=0,
 			encoding="utf-8")
 		# shuffle
-		data.sample(frac=1)
+	data.sample(frac=1)
 
-		pp.pprint(data)		
+	print(data)		

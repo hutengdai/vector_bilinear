@@ -1,14 +1,34 @@
 import bilinear
+import pandas as pd
 import run_model_lm
 # python ${source}/daland_eval.py ${experiment_dir}/Judgements/${name}_${i} ${source}/data/Daland_etal_2011__AverageScores.csv 
 
 if __name__ == '__main__':
 	# training_split = 80
-	vectors_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v"
+	# vectors_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v"
+	vectors_filename="data/features/english_binary_features.w2v"
 	train_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1"
 	dev_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2"
-	token_filename="data/onset_tokens_arpa.txt"
+	# token_filename="data/onset_tokens_arpa.txt"
+	
+	import argparse
 
+	parser = argparse.ArgumentParser(description='Estimate conditional word probabilities using a log-bilinear model')
+	parser.add_argument("feature_embedding", type=str, help="feature embedding file path")
+	parser.add_argument("training_file", type=str, help="Training file")
+	parser.add_argument("dev_file", type=str, help="Dev file")
+	# parser.add_argument("testing_file", type=str, help="Test file")
+
+	# parser.add_argument("", type=str, help="")
+
+	args = parser.parse_args()
+	vectors_filename = args.feature_embedding
+	train_filename = args.training_file
+	dev_filename = args.dev_file
+
+
+	training_data = pd.read_csv(train_filename, header = None)
+	training_data_size = sum(training_data[2])
 	# num_lines = sum(1 for line in open('data/onset_tokens_arpa.txt'))
 	
 	# split = num_lines // training_split
@@ -49,9 +69,11 @@ if __name__ == '__main__':
 				no_encoders=True,
 				batch_size=	batch_size,
 				lr = lr,
-				num_iter=200,
+				# num_iter=200,
+				num_iter = int(training_data_size / batch_size),
 				output_filename=output_filename
 				)
+			# breakpoint()
 			with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(batch_size),str(lr)), "w") as diagnostics_print:
 				for row in diagnostics:
 				# 	diagnostics_print.write(row+'\n')
