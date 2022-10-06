@@ -1,6 +1,9 @@
 import bilinear
 import pandas as pd
 import run_model_lm
+import datetime
+
+
 # python ${source}/daland_eval.py ${experiment_dir}/Judgements/${name}_${i} ${source}/data/Daland_etal_2011__AverageScores.csv 
 
 if __name__ == '__main__':
@@ -80,9 +83,10 @@ if __name__ == '__main__':
 	# 	a["num_iter"] = 200
 
 	# 	breakpoint()
-
-	df = pd.DataFrame()
+	current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
+	header = True
 	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
+		
 		for lr in [0.1, 0.01, 0.001, 0.0001]:
 			model, diagnostics = bilinear.main(vectors_filename,
 				train_filename,
@@ -91,21 +95,18 @@ if __name__ == '__main__':
 				no_encoders=True,
 				batch_size=	batch_size,
 				lr = lr,
-				# num_iter=200,
+				check_every = 1,
 				num_iter = int(training_data_size / batch_size),
 				output_filename=output_filename
 				)
-			# breakpoint()
-			with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(batch_size),str(lr)), "w") as diagnostics_print:
-				# for row in diagnostics:
-				a = pd.DataFrame(diagnostics)
-				print(a)
-				a["batch_size"] = batch_size
-				a["lr"] = lr
-				a["num_iter"] = int(training_data_size / batch_size)
-				df = df.append(a)
-				# diagnostics_print.write(row+'\n')
-				# print(row, file=diagnostics_print)
+			a = pd.DataFrame(diagnostics)
+			a["batch_size"] = batch_size
+			a["lr"] = lr
+			a["num_iter"] = int(training_data_size / batch_size)
+			a.to_csv("hyperparameters\\diagnostics_print%s.csv" % str(current_time), mode='a+', index=False, header=header)
+			header = False
+			print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
+
 
 # control R
 	# dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
