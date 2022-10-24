@@ -29,59 +29,15 @@ if __name__ == '__main__':
 	train_filename = args.training_file
 	dev_filename = args.dev_file
 
-
 	training_data = pd.read_csv(train_filename, header = None)
 	training_data_size = sum(training_data[2])
 	# num_lines = sum(1 for line in open('data/onset_tokens_arpa.txt'))
 	
-	# split = num_lines // training_split
-	
-	# with open(train_filename, 'r') as f:
-	# 	file_lines = f.readlines()
-
-	# random.shuffle( open('data/onset_tokens_arpa.txt'))
-	# dev = file_lines[:len(file_lines) * 0.2]
-	# train = file_lines[len(file_lines) * 0.2:]	
-	# train_filename
-	# dev = 
-
-
-	# for i in range(1,10):
-	# 	bilinear.main(vectors_filename,
-	# 		train_filename,
-	# 		dev_filename=None,
-	# 		test_filename=None,
-	# 		no_encoders=True,
-	# 		batch_size=	2**i)
-		
-		# --no_encoders ${w2v_path} ${ngrams_path} --batch_size $i --num_iter $((num_sample/i))
-
 	### Fit a MaxEnt model ###
 
 	print("1. Fitting phonotactic grammar")
 	output_filename= bilinear.DEFAULT_FILENAME
 
-	# model, diagnostics = bilinear.main(vectors_filename,
-	# 				train_filename,
-	# 				dev_filename,
-	# 				test_filename=None,
-	# 				no_encoders=True,
-	# 				batch_size=	32,
-	# 				lr = 0.1,
-	# 				# num_iter=200,
-	# 				num_iter = 200,
-	# 				output_filename=output_filename
-	# 				)
-	# 			# breakpoint()
-	# with open("hyperparameters\\diagnostics_print%s_%s.txt" % (str(32),str(0.1)), "w") as diagnostics_print:
-	# 	# for row in diagnostics:
-	# 	a = pd.DataFrame(diagnostics)
-	# 	print(a)
-	# 	a["batch_size"] = 32
-	# 	a["lr"] = 0.1
-	# 	a["num_iter"] = 200
-
-	# 	breakpoint()
 	current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
 	header = True
 	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
