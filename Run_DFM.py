@@ -54,7 +54,6 @@ if __name__ == '__main__':
 	# 		no_encoders=True,
 	# 		batch_size=	2**i)
 		
-		
 		# --no_encoders ${w2v_path} ${ngrams_path} --batch_size $i --num_iter $((num_sample/i))
 
 	### Fit a MaxEnt model ###
