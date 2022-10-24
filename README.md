@@ -7,8 +7,11 @@ The goal of the study is to examine the role of natural classes in phonological 
 
 Here is how to run the program:
 
+- for binary features
 python3 Run_DFM.py data/features/english_binary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word
 2vec.ngrams_1 data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2
 
-python3 Run_DFM.py data/features/english_binary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word
+- for learned embeddings (Mayer 2020)
+python3 Run_DFM.py data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v data/onset_tokens_arpa_bigram_ppmi_word
 2vec.ngrams_1 data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2
+
