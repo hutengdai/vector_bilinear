@@ -102,7 +102,7 @@ if __name__ == '__main__':
 			a["batch_size"] = batch_size
 			a["lr"] = lr
 			a["num_iter"] = int(training_data_size / batch_size)
-			a.to_csv("hyperparameters\\diagnostics_print%s.csv" % str(current_time), mode='a+', index=False, header=header)
+			a.to_csv("hyperparameters/result%s.csv" % str(current_time), mode='a+', index=False, header=header)
 			header = False
 			print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
 
