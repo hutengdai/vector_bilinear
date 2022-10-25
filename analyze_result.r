@@ -1,6 +1,6 @@
 library(tidyverse)
-induced_class = read_csv("C:/Users/huten/Desktop/dfm/result/result2022-10-24-14-05-34.csv")
 binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/result.csv")
+induced_class = read_csv("C:/Users/huten/Desktop/dfm/result/result2022-10-24-14-05-34.csv")
 
 df = binary_feature
 head(df)
