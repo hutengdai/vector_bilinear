@@ -34,4 +34,5 @@ def main(filename, dev_proportion, seed=None):
         rw.write_counts(outfile, dev.items())
 
 if __name__ == '__main__':
+    # this code will generate training and dev set
     main(*sys.argv[1:])
