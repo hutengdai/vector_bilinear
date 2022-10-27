@@ -1,7 +1,7 @@
 library(tidyverse)
 binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/binary_feature.csv")
 ternary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/ternary_feature.csv")
-induced_ppmi = read_csv("C:/Users/huten/Desktop/dfm/result/induced_ppmi_class.csv")
+induced_ppmi = read_csv("C:/Users/huten/Desktop/dfm/result/induced_ppmi_class_10_27.csv")
 induced_pmi = read_csv("C:/Users/huten/Desktop/dfm/result/induced_pmi_class.csv")
 
 
@@ -41,8 +41,7 @@ a <- ternary_feature %>% arrange(dev_loss) %>%
 head(a, 20)
 
 # induced ppmi 
-# 64 0.01 2.63 [GOOD]
-# 32 0.01 2.59
+# 64 0.001 1.58 [GOOD]
 induced_ppmi %>% filter(lr < 0.1) %>% 
   ggplot(aes(x=step, y = dev_loss,
              color = as_factor(lr))) + 
