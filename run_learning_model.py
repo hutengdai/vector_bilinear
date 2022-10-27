@@ -20,6 +20,8 @@ if __name__ == '__main__':
 	parser.add_argument("feature_embedding", type=str, help="feature embedding file path")
 	parser.add_argument("training_file", type=str, help="Training file")
 	parser.add_argument("dev_file", type=str, help="Dev file")
+	parser.add_argument("result_file", type=str, help="Result file")
+
 	# parser.add_argument("testing_file", type=str, help="Test file")
 
 	# parser.add_argument("", type=str, help="")
@@ -28,6 +30,7 @@ if __name__ == '__main__':
 	vectors_filename = args.feature_embedding
 	train_filename = args.training_file
 	dev_filename = args.dev_file
+	result_file = args.result_file
 
 
 	training_data = pd.read_csv(train_filename, header = None)
@@ -39,8 +42,7 @@ if __name__ == '__main__':
 
 	print("1. Fitting phonotactic grammar")
 	output_filename= bilinear.DEFAULT_FILENAME
-
-	current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
+	# current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
 	header = True
 	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
 		
@@ -60,7 +62,7 @@ if __name__ == '__main__':
 			a["batch_size"] = batch_size
 			a["lr"] = lr
 			a["num_iter"] = int(training_data_size / batch_size)
-			a.to_csv("result/result%s.csv" % str(current_time), mode='a+', index=False, header=header)
+			a.to_csv("result/%s.csv" % str(result_file), mode='a+', index=False, header=header)
 			header = False
 			print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
 

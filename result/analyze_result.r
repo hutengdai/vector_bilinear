@@ -1,5 +1,5 @@
 library(tidyverse)
-binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/binary.csv")
+binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/result2022-10-27-15-15-00.csv")
 
 binary_feature %>% filter(dev_loss == min(dev_loss)) %>% 
   select(step, batch_size, lr, num_iter, dev_loss)
