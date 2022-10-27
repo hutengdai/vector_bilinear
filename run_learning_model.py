@@ -52,7 +52,7 @@ if __name__ == '__main__':
 				no_encoders=True,
 				batch_size=	batch_size,
 				lr = lr,
-				check_every = 100,
+				check_every = 1,
 				num_iter = int(training_data_size / batch_size),
 				output_filename=output_filename
 				)
