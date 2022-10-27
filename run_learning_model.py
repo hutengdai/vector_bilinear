@@ -28,8 +28,7 @@ if __name__ == '__main__':
 	vectors_filename = args.feature_embedding
 	train_filename = args.training_file
 	dev_filename = args.dev_file
-	batch_size = args.batch_size
-	lr =  args.batch_size
+
 
 	training_data = pd.read_csv(train_filename, header = None)
 	training_data_size = sum(training_data[2])
@@ -61,7 +60,7 @@ if __name__ == '__main__':
 			a["batch_size"] = batch_size
 			a["lr"] = lr
 			a["num_iter"] = int(training_data_size / batch_size)
-			a.to_csv("hyperparameters/result%s.csv" % str(current_time), mode='a+', index=False, header=header)
+			a.to_csv("result/result%s.csv" % str(current_time), mode='a+', index=False, header=header)
 			header = False
 			print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
 
