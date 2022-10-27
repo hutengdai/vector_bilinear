@@ -1,0 +1,1 @@
+,syllabic,consonantal,sonorant,continuant,delayed release,approximant,nasal,voice,spread glottis,labial,round,labiodental,coronal,anterior,distributed,strident,lateral,dorsal,high,low,front,back,tense
