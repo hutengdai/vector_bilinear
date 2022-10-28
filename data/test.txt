@@ -1,0 +1,45 @@
+
+syllabic_plus
+syllabic_minus
+consonantal_plus
+consonantal_minus
+sonorant_plus
+sonorant_minus
+continuant_plus
+continuant_minus
+delayed release_plus
+delayed release_minus
+approximant_plus
+approximant_minus
+nasal_plus
+nasal_minus
+voice_plus
+voice_minus
+spread glottis_plus
+spread glottis_minus
+labial_plus
+labial_minus
+round_plus
+round_minus
+labiodental_plus
+labiodental_minus
+coronal_plus
+coronal_minus
+anterior_plus
+anterior_minus
+distributed_plus
+distributed_minus
+strident_plus
+strident_minus
+lateral_plus
+lateral_minus
+dorsal_plus
+dorsal_minus
+high_plus
+high_minus
+low_plus
+low_minus
+front_plus
+front_minus
+back_plus
+backAC

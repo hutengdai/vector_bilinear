@@ -47,3 +47,14 @@ python run_saved_model.py result/induced_pmi_class_10_27.pt data/test_data_dalan
 Analysizing testing result:
 
 load pytorch model
+
+
+
+headmap for constraints A matrix
+
+black and white for feature matrices.
+
+
+
+
+
