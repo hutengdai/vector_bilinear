@@ -1,5 +1,5 @@
 library(tidyverse)
-binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/result2022-10-27-15-15-00.csv")
+binary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/binary1.csv")
 
 binary_feature %>% filter(dev_loss == min(dev_loss)) %>% 
   select(step, batch_size, lr, num_iter, dev_loss)
@@ -24,7 +24,7 @@ head(a, 25)
 # 512 0.01 1.57
 # 64 0.001 1.57 [GOOD]
 
-ternary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/ternary.csv")
+ternary_feature = read_csv("C:/Users/huten/Desktop/dfm/result/ternary1.csv")
 
 ternary_feature %>% filter(lr < 0.01) %>% 
   ggplot(aes(x=step, y = dev_loss,
@@ -38,7 +38,7 @@ head(a, 20)
 
 # induced ppmi 
 # 64 0.001 1.58 [GOOD]
-induced_ppmi = read_csv("C:/Users/huten/Desktop/dfm/result/ppmi.csv")
+induced_ppmi = read_csv("C:/Users/huten/Desktop/dfm/result/ppmi1.csv")
 
 induced_ppmi %>% filter(lr < 0.1) %>% 
   ggplot(aes(x=step, y = dev_loss,
@@ -55,7 +55,7 @@ head(a,20)
 # 512 0.01 1.58
 # 32 0.01 1.58
 # 64 0.001 1.58 [GOOD]
-induced_pmi = read_csv("C:/Users/huten/Desktop/dfm/result/pmi.csv")
+induced_pmi = read_csv("C:/Users/huten/Desktop/dfm/result/pmi1.csv")
 
 induced_pmi %>% filter(lr < 0.01) %>% 
   ggplot(aes(x=step, y = dev_loss,
@@ -67,3 +67,6 @@ a <- induced_pmi %>% arrange(dev_loss) %>%
   select(step, batch_size, lr, num_iter, dev_loss)
 head(a,20)
 
+
+
+## scatterplot

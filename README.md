@@ -35,10 +35,15 @@ python bilinear.py data/onset_tokens_arpa_bigram_pmi_word2vec.w2v data/onset_tok
 
 <!-- Run saved models -->
 
-python run_saved_model.py result/binary_feature_10_27.pt data/daland_et_al_arpa_onset_only.txt result/binary_feature_10_27.txt
+python run_saved_model.py result/binary_feature_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/binary_feature_10_27.txt
 
-python run_saved_model.py result/ternary_feature_10_27.pt data/daland_et_al_arpa_onset_only.txt result/ternary_feature_10_27.txt
+python run_saved_model.py result/ternary_feature_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/ternary_feature_10_27.txt
 
-python run_saved_model.py result/induced_ppmi_class_10_27.pt data/daland_et_al_arpa_onset_only.txt result/induced_ppmi_class_10_27.txt
+python run_saved_model.py result/induced_ppmi_class_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/induced_ppmi_class_10_27.txt
 
-python run_saved_model.py result/induced_pmi_class_10_27.pt data/daland_et_al_arpa_onset_only.txt result/induced_pmi_class_10_27.txt
+python run_saved_model.py result/induced_pmi_class_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_10_27.txt
+
+
+Analysizing testing result:
+
+load pytorch model

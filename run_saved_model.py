@@ -9,6 +9,8 @@ from bilinear import WordVectors, MarginalLogLinear, ConditionalSoftmax, Conditi
 def main(model_filename, data_filename, out_filename):
 	
 	model = torch.load(model_filename)
+
+	breakpoint()
 	with open(out_filename, "w", newline= "") as outfile:
 		writer = csv.writer(outfile)
 		with open(data_filename, newline= "") as infile:
