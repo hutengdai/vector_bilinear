@@ -58,3 +58,11 @@ black and white for feature matrices.
 
 
 
+GOOD:
+
+
+BAD:
+[-cons][+cons]
+[][]
+
+Missing features for word boundary in binary and ternary feature files (w2v)
