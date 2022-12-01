@@ -36,9 +36,13 @@ def visual_judgefile(humanjudgefile,bilinear_judgement):
 
 	data["machine_judgement"] = machine_data["score"]
 	# newdata = data
+
+	data = data.sort_values("likert_rating", ascending = False)
+	data['rank'] = range(0, len(data))
+
 	newdata = data[data["machine_judgement"] > -25]
 	print(newdata)
-	
+	# breakpoint()
 	pearsoncorr, _ = pearsonr(newdata['likert_rating'], newdata['machine_judgement'])
 	print('Pearsons correlation: %.3f' % pearsoncorr)
 	# 
@@ -48,8 +52,8 @@ def visual_judgefile(humanjudgefile,bilinear_judgement):
 	print('Kentall correlation: %.3f' % kendalltaucorr)
 
 	# fig = ggplot.scatterplot(data=data, x="machine_judgement", y="likert_rating")
-	a = (ggplot(newdata, aes(x='machine_judgement', y='likert_rating', color='attestedness')) + 
-	geom_point())
+	a = (ggplot(newdata, aes(x='machine_judgement', y='rank', color='attestedness', label = 'ortho')) + 
+	geom_text())
 
 	print(a)
 	plt.savefig('correlation.png', dpi=300)
@@ -68,9 +72,13 @@ if __name__ == '__main__':
 
 
 	humanJudgement = "data\\Daland_etal_2011__AverageScores.csv"
-	bilinear_judgement = "data\\bilinear_judgement.txt"
+	pmi_judgement = "result\\induced_pmi_class_10_27.txt"
+	ppmi_judgement = "result\\induced_ppmi_class_10_27.txt"
+	binary_judgement = "result\\binary_feature_10_27.txt"
+	ternary_judgement = "result\\ternary_feature_10_27.txt"
+
 	nelson_judgement = "data\\Nelson_model_onset_judgement.txt"
-	visual_judgefile(humanJudgement,nelson_judgement)
+	visual_judgefile(humanJudgement,ternary_judgement)
 
 # bilinear:
 # Pearsons correlation: -0.798
@@ -85,3 +93,7 @@ if __name__ == '__main__':
 # Pearsons correlation: 0.742
 # Spearman correlation: 0.780
 # Kentall correlation: 0.621
+
+
+
+
