@@ -30,9 +30,9 @@ def heatmap(model_filename):
 	
 
 	
-	s1 = TH-_ W-_ S-_ T-_ V-_ HH-_ D-_ R-_ N-_ K-_ F-_ CH-_ B-_ L-_ DH-_ JH-_ G-_ P-_ Z-_ M-_ Y-_ SH-_
+	# s1 = TH-_ W-_ S-_ T-_ V-_ HH-_ D-_ R-_ N-_ K-_ F-_ CH-_ B-_ L-_ DH-_ JH-_ G-_ P-_ Z-_ M-_ Y-_ SH-_
 
-	s2 =_-TH _-W _-# _-S _-T _-V _-HH _-D _-R _-N _-K _-F _-CH _-B _-L _-DH _-JH _-G _-P _-Z _-M _-Y _-SH #-_ 
+	# s2 =_-TH _-W _-# _-S _-T _-V _-HH _-D _-R _-N _-K _-F _-CH _-B _-L _-DH _-JH _-G _-P _-Z _-M _-Y _-SH #-_ 
 	
 	A_matrix = filter_matrix(A_matrix, s1, subset_labels)
 	print(A_matrix)
