@@ -41,7 +41,8 @@ IPA_ARPA_MAP = {
     'eɪ': 'EY',
     'ɔɪ': 'OY',
     'tʃ': 'CH',
-    'dʒ': 'JH'
+    'dʒ': 'JH',
+    '#': '#'
 }
 
 def convert_features_trinary(feature):
