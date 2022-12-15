@@ -66,3 +66,10 @@ BAD:
 [][]
 
 Missing features for word boundary in binary and ternary feature files (w2v)
+
+Note: 
+- X-axis in the heatmap indicates the preceding context.
+
+- New learning data (with exotic words); Polish data (where can we find it)
+- Trigram <- bigram linear model? Tensor sum? 
+- 
