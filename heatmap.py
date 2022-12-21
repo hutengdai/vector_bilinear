@@ -57,8 +57,10 @@ def heatmap(model_filename):
 	ax.set_title("A_matrix")
 	fig.tight_layout()
 
-	plt.show()
+	# plt.show()
+
 	print(model.w_linear.weight)
+	plt.savefig('heatmap_%s.png' %str(model_filename).split(".")[0].replace("result/",""), dpi=300)  
 
 	
 if __name__ == '__main__':

@@ -37,12 +37,10 @@ if __name__ == '__main__':
 	training_data_size = sum(training_data[2])
 
 	# num_lines = sum(1 for line in open('data/onset_tokens_arpa.txt'))
-	
-	### Fit a MaxEnt model ###
+
 
 	print("1. Fitting phonotactic grammar")
 	output_filename= bilinear.DEFAULT_FILENAME
-	# current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
 	header = True
 	for batch_size in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
 		
@@ -65,44 +63,3 @@ if __name__ == '__main__':
 			a.to_csv("result/%s.csv" % str(result_file), mode='a+', index=False, header=header)
 			header = False
 			print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
-
-	# header = True
-	# current_time = str(datetime.datetime.now()).split(".")[0].replace(" ", "-").replace(":","-")
-
-	# output_filename= "output/model_%s_%s.pt" % str((batch_size, lr))
-	# model, diagnostics = bilinear.main(vectors_filename,
-	# 	train_filename,
-	# 	dev_filename,
-	# 	test_filename=None,
-	# 	no_encoders=True,
-	# 	batch_size=	batch_size,
-	# 	lr = lr,
-	# 	check_every = 1,
-	# 	num_iter = int(training_data_size / batch_size),
-	# 	output_filename=output_filename
-	# 	)
-	# a = pd.DataFrame(diagnostics)
-	# a["batch_size"] = batch_size
-	# a["lr"] = lr
-	# a["num_iter"] = int(training_data_size / batch_size)
-	# a.to_csv("hyperparameters/result%s.csv" % str(current_time), mode='a+', index=False, header=header)
-	# header = False
-	# print("Loop is finished! Batch size %s Learning rate%s" %(str(batch_size), str(lr)))
-
-
-# control R
-# dalandfile = "data\\Daland_et_al_arpa_onset_only.txt"
-# out_filename = "data\\bilinear_judgement.txt"
-
-## Test correlations with Daland Et Al judgements ###
-# run_model_lm.main(output_filename,dalandfile,out_filename)
-
-
-# echo "2. Testing Daland Et Al correlations"
-
-# Train the bilinear model on the onset ARPABET token data, trying a range of relevant hyperparameters to find the best fit
-# Test the data on the Daland et al onsets and get the output of the model in the format that Max's code expects
-# Run Max's code to calculate correlations between our model and the human judgements
-# Compare against results from Max's model
-
-
