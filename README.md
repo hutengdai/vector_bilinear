@@ -68,3 +68,5 @@ python heatmap.py result/ternary_feature_10_27.pt 1
 TODO:
 1. Compare tied and untied 
 2. attestedness
+3. Get correlations for all the models we're testing and put them in a table
+4. Break down model scores across three attestedness categories
