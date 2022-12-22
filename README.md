@@ -56,3 +56,15 @@ python run_saved_model.py result/induced_pmi_class_10_27.pt data/test_data_dalan
 
     - New learning data (with exotic words); Polish data (where can we find it)
     - Trigram <- bigram linear model? Tensor sum?
+
+
+Ternary -> Tied
+Binary -> untied
+
+python heatmap.py result/ternary_feature_10_27.pt 1
+
+
+
+TODO:
+1. Compare tied and untied 
+2. attestedness

@@ -80,6 +80,16 @@ if __name__ == '__main__':
 	nelson_judgement = "data\\Nelson_model_onset_judgement.txt"
 	visual_judgefile(humanJudgement,ternary_judgement)
 
+# ternary:	
+# Pearsons correlation: -0.757
+# Spearman correlation: -0.840
+# Kentall correlation: -0.646
+
+# binary:
+# Pearsons correlation: -0.785
+# Spearman correlation: -0.856
+# Kentall correlation: -0.646
+
 # bilinear:
 # Pearsons correlation: -0.798
 # Spearman correlation: -0.842
