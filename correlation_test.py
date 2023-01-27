@@ -14,7 +14,7 @@ pp = pprint.PrettyPrinter(indent=4)
 pprint.sorted = lambda x, key=None: x
 
 
-def visual_judgefile(humanjudgefile,bilinear_judgement):
+def visual_judgefile(humanjudgefile,machine_judgement):
 
 	data = pd.read_csv(
 		humanjudgefile,
@@ -23,7 +23,7 @@ def visual_judgefile(humanjudgefile,bilinear_judgement):
 		encoding="utf-8")
 
 	machine_data = pd.read_csv(
-		bilinear_judgement,
+		machine_judgement,
 		sep=",",
 		# header=0,
 		names=["onset","score"],
@@ -35,7 +35,6 @@ def visual_judgefile(humanjudgefile,bilinear_judgement):
 	# fig_human.save('daland.png', dpi=300)
 
 	data["machine_judgement"] = machine_data["score"]
-	# newdata = data
 
 	data = data.sort_values("likert_rating", ascending = False)
 	data['rank'] = range(0, len(data))
@@ -77,8 +76,8 @@ if __name__ == '__main__':
 	binary_judgement = "result\\binary_feature_10_27.txt"
 	ternary_judgement = "result\\ternary_feature_10_27.txt"
 
-	nelson_judgement = "data\\Nelson_model_onset_judgement.txt"
-	visual_judgefile(humanJudgement,ternary_judgement)
+	nelson_judgement = "result\\nelson_results\\nelson_model_judgements.txt"
+	visual_judgefile(humanJudgement,nelson_judgement)
 
 # ternary:	
 # Pearsons correlation: -0.757
