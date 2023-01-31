@@ -1,6 +1,6 @@
 term,human_response
 smoothed_bigram,0.585412959656116
-hayes_phonetic_features,-0.6417476623345044
-hayes_learned_features_1_0,-0.5782954768639443
-hayes_learned_features_1_5,-0.5907510717502448
-hayes_learned_features_2_5,-0.5533842870913437
+hayes_phonetic_features,0.6417476623345044
+hayes_learned_features_1_0,0.5782954768639443
+hayes_learned_features_1_5,0.5907510717502448
+hayes_learned_features_2_5,0.5533842870913437

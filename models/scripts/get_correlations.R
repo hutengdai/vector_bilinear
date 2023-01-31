@@ -4,6 +4,12 @@ library(corrr)
 setwd("E:/git_repos/DFM/models")
 scores <- read_csv("results/overall_scores.csv")
 
+scores <- scores %>%
+  mutate(hayes_phonetic_features = hayes_phonetic_features * -1,
+         hayes_learned_features_1_0 = hayes_learned_features_1_0 * -1,
+         hayes_learned_features_1_5 = hayes_learned_features_1_5 * -1,
+         hayes_learned_features_2_5 = hayes_learned_features_2_5 * -1)
+
 # Overall correlations
 scores %>% 
   select(-word) %>%
@@ -28,24 +34,8 @@ scores %>%
   unnest(correlations) %>% 
   select(attestedness, term, human_response) %>%
   filter(!is.na(human_response)) %>%
-  write_csv('results/overall_correlations.csv')
+  write_csv('results/grouped_correlations.csv')
 
 scores %>%
-  ggplot(aes(x=human_response, y=smoothed_bigram)) +
-  geom_point()
-
-scores %>%
-  ggplot(aes(x=human_response, y=-hayes_phonetic_features)) +
-  geom_point()
-
-scores %>%
-  ggplot(aes(x=human_response, y=-log(hayes_learned_features_1_0))) +
-  geom_point()
-
-scores %>%
-  ggplot(aes(x=human_response, y=-hayes_learned_features_1_5)) +
-  geom_point()
-
-scores %>%
-  ggplot(aes(x=human_response, y=-hayes_learned_features_2_5)) +
-  geom_point()
+  select(-word, -attestedness) %>%
+  ggpairs() 
