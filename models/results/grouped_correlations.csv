@@ -4,13 +4,16 @@ attested,hayes_phonetic_features,0.17162557411595686
 attested,hayes_learned_features_1_0,0.1584236068762679
 attested,hayes_learned_features_1_5,0.18482754135564586
 attested,hayes_learned_features_2_5,0.1452216396365789
+attested,max_sc_kld,0.2020305089104421
 marginal,smoothed_bigram,0.3302891295379082
 marginal,hayes_phonetic_features,0.587180674734059
 marginal,hayes_learned_features_1_0,0.36698792170878686
 marginal,hayes_learned_features_1_5,0.3302891295379082
 marginal,hayes_learned_features_2_5,0.3302891295379082
+marginal,max_sc_kld,-0.16984155512168936
 unattested,smoothed_bigram,0.4483951394230329
 unattested,hayes_phonetic_features,0.5309942440535916
 unattested,hayes_learned_features_1_0,0.4483951394230329
 unattested,hayes_learned_features_1_5,0.42479539524287324
 unattested,hayes_learned_features_2_5,0.40119565106271365
+unattested,max_sc_kld,0.7633269726839809
