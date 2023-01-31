@@ -1,7 +1,9 @@
 library(tidyverse)
 library(corrr)
+library(GGally)
 
-setwd("E:/git_repos/DFM/models")
+#setwd("E:/git_repos/DFM/models")
+setwd("C:/Users/conno/git_repos/vector_bilinear/models")
 scores <- read_csv("results/overall_scores.csv")
 
 scores <- scores %>%

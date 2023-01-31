@@ -10,6 +10,7 @@ attested,hayes_2_5_ic_no_singletons,0.05954913341754136
 attested,hayes_1_0_ic_singletons,0.1584236068762679
 attested,hayes_1_5_ic_singletons,0.1452216396365789
 attested,hayes_2_5_ic_singletons,0.1584236068762679
+attested,max_sc_kld,0.2020305089104421
 marginal,smoothed_bigram,0.3302891295379082
 marginal,hayes_phonetic_features,0.587180674734059
 marginal,hayes_1_0_complementary_singletons,0.36698792170878686
@@ -21,6 +22,7 @@ marginal,hayes_2_5_ic_no_singletons,-0.023688968483956713
 marginal,hayes_1_0_ic_singletons,0.40368671387966554
 marginal,hayes_1_5_ic_singletons,0.36698792170878686
 marginal,hayes_2_5_ic_singletons,0.40368671387966554
+marginal,max_sc_kld,-0.16984155512168936
 unattested,smoothed_bigram,0.4483951394230329
 unattested,hayes_phonetic_features,0.5309942440535916
 unattested,hayes_1_0_complementary_singletons,0.4483951394230329
@@ -32,3 +34,4 @@ unattested,hayes_2_5_ic_no_singletons,0.19528164438810075
 unattested,hayes_1_0_ic_singletons,0.4601950115131127
 unattested,hayes_1_5_ic_singletons,0.42479539524287324
 unattested,hayes_2_5_ic_singletons,0.47199488360319253
+unattested,max_sc_kld,0.7633269726839809
