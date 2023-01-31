@@ -77,7 +77,7 @@ if __name__ == '__main__':
 	ternary_judgement = "result\\ternary_feature_10_27.txt"
 
 	nelson_judgement = "result\\nelson_results\\nelson_model_judgements.txt"
-	visual_judgefile(humanJudgement,nelson_judgement)
+	visual_judgefile(humanJudgement,pmi_judgement)
 
 # ternary:	
 # Pearsons correlation: -0.757
