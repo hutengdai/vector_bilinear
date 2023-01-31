@@ -6,7 +6,7 @@ python3.10 VectorModelBuilder.py ../../models/training_data/onset_type_frequenci
 
 # Cluster at various variance scalar parameters (sub for 1.5 below)
 
-python3.10 clusterer.py ../../models/embeddings/onset_type_frequencies_bigram_pmi ../../models/learned_classes/ --no_constrain_initial_partition --v_scalar 1.5
+python3.10 clusterer.py ../../models/embeddings/onset_type_frequencies_bigram_pmi ../../models/learned_classes/onset_type_frequencies_bigram_1_5.csv --no_constrain_initial_partition --v_scalar 1.5
 
 # Convert learned classes to discrete classes
 

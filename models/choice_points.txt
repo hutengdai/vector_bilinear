@@ -54,13 +54,14 @@ X
 
 Learned classes:
 	- Mayer (2020) algorithm: learned_classes/onset_type...
-		- Variance parameter? Max uses 1.5 and 2.5
-		- run without constraining initial partition 
+		- best results with default variance (1)
+		- singletons added afterwards
 	- Nelson (2022) algorithms: we don't need to store these explicitly, generated as part of code
 
 Discrete embeddings:
 	- Hayes features binary: training_data/english_features.csv
-	- Learned features: training_data/..._discrete_...
+	- Learned features: training_data/onset_type_frequencies_bigram_ppmi_discrete_hw.csv
+		- calculated using inferentiatial complementary mode
 
 X
 
