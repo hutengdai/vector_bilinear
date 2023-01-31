@@ -13,31 +13,31 @@ scp huteng@sephiroth.socsci.uci.edu:~/filename . )
 (1) run the learning model
 
 <!-- binary feature -->
-python bilinear.py data/english_binary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/binary_feature_10_27.pt
+python bilinear.py ./input/english_binary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename ./result/binary_feature_10_27.pt
 
 <!-- ternary feature -->
-python bilinear.py data/english_ternary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/ternary_feature_10_27.pt
+python bilinear.py ./input/english_ternary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename ./result/ternary_feature_10_27.pt
 
-python bilinear.py data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.01 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/induced_ppmi_class_10_27.pt
+python bilinear.py ./input/onset_tokens_arpa_bigram_ppmi_word2vec.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.01 --batch_size 64 --no_encoders --num_iter 881 --output_filename ./result/induced_ppmi_class_10_27.pt
 
-python bilinear.py data/onset_tokens_arpa_bigram_pmi_word2vec.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/induced_pmi_class_10_27.pt
+python bilinear.py ./input/onset_tokens_arpa_bigram_pmi_word2vec.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename ./result/induced_pmi_class_10_27.pt
 
 <!--  OLD command (output everything in the terminal to binary1.csv):
 - for binary features
-python run_learning_model.py data/english_binary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 result/binary1.csv
+python run_learning_model.py ./input/english_binary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 ./result/binary1.csv
 
 - for ternary features
-python run_learning_model.py data/english_ternary_features.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 result/ternary1.csv
+python run_learning_model.py ./input/english_ternary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 ./result/ternary1.csv
 
 - for learned embeddings (Mayer 2020)
-python run_learning_model.py data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 result/induced_ppmi_class.csv -->
+python run_learning_model.py ./input/onset_tokens_arpa_bigram_ppmi_word2vec.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 ./result/induced_ppmi_class.csv -->
 
 <!-- Run saved models -->
 
-python run_saved_model.py result/binary_feature_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/binary_feature_10_27.txt
-python run_saved_model.py result/ternary_feature_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/ternary_feature_10_27.txt
-python run_saved_model.py result/induced_ppmi_class_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/induced_ppmi_class_10_27.txt
-python run_saved_model.py result/induced_pmi_class_10_27.pt data/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_10_27.txt
+python run_saved_model.py ./result/binary_feature_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/binary_feature_10_27.txt
+python run_saved_model.py ./result/ternary_feature_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/ternary_feature_10_27.txt
+python run_saved_model.py ./result/induced_ppmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_ppmi_class_10_27.txt
+python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_pmi_class_10_27.txt
 
 
     Analysizing testing result:
@@ -61,7 +61,7 @@ python run_saved_model.py result/induced_pmi_class_10_27.pt data/test_data_dalan
 Ternary -> Tied
 Binary -> untied
 
-python heatmap.py result/ternary_feature_10_27.pt 1
+python heatmap.py ././result/ternary_feature_10_27.pt 1
 
 
 

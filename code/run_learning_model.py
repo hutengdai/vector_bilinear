@@ -4,15 +4,15 @@ import run_saved_model
 import datetime
 
 
-# python ${source}/daland_eval.py ${experiment_dir}/Judgements/${name}_${i} ${source}/data/Daland_etal_2011__AverageScores.csv 
+# python ${source}/daland_eval.py ${experiment_dir}/Judgements/${name}_${i} ${source}/input/Daland_etal_2011__AverageScores.csv 
 
 if __name__ == '__main__':
 	# training_split = 80
-	# vectors_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.w2v"
-	vectors_filename="data/features/english_binary_features.w2v"
-	train_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1"
-	dev_filename="data/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2"
-	# token_filename="data/onset_tokens_arpa.txt"
+	# vectors_filename="input/onset_tokens_arpa_bigram_ppmi_word2vec.w2v"
+	vectors_filename="input/features/english_binary_features.w2v"
+	train_filename="input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1"
+	dev_filename="input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2"
+	# token_filename="input/onset_tokens_arpa.txt"
 	
 	import argparse
 
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 	training_data = pd.read_csv(train_filename, header = None)
 	training_data_size = sum(training_data[2])
 
-	# num_lines = sum(1 for line in open('data/onset_tokens_arpa.txt'))
+	# num_lines = sum(1 for line in open('input/onset_tokens_arpa.txt'))
 
 
 	print("1. Fitting phonotactic grammar")
