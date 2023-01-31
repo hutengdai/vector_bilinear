@@ -1,0 +1,18 @@
+
+Reading the feature tiers ...
+java.io.FileNotFoundException: C:\AR\Phonotactics\UCLAPhonotacticLearner\PublicVersion\Frank (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at edu.ucla.uclapl.UCLAPhonotacticLearner.readTiers(UCLAPhonotacticLearner.java:844)
+	at edu.ucla.uclapl.UCLAPhonotacticLearner.main(UCLAPhonotacticLearner.java:285)
+	at PLUI.LearnerThread.doInBackground(LearnerThread.java:70)
+	at PLUI.LearnerThread.doInBackground(LearnerThread.java:18)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

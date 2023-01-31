@@ -1,0 +1,81 @@
+ALL POSSIBLE CHOICE POINTS
+
+Training data:
+	- attested
+	- type frequency
+	- token frequency
+
+X
+
+Continuous embeddings:
+	- bigram PMI
+	- bigram PPMI
+
+X
+
+Class learning:
+	- Mayer (2020) algorithm
+		- Variance parameter? Max uses 1.5 and 2.5
+	- Nelson (2022) algorithms
+		- SC, KLD
+
+Discrete embeddings:
+	- Hayes features binary
+	- Hayes features ternary
+	- Learned features (PMI)
+	- Learned features (PPMI)
+
+	Something to consider here is that there are four different algorithms from Mayer & Daland that can convert from classes to features. Max uses the 'inferential contrastive', which is a good choice, but we could potentially vary these as well.
+
+X
+
+Model:
+	- H & W
+	- Max
+	- Bilinear
+	- RNN (Mayer & Nelson 2020)
+	- Simple bigram
+
+
+
+
+
+FOR US
+
+Training data:
+	- type frequency: training_data/onset_type_frequencies_arpa.txt
+
+X
+
+Continuous embeddings:
+	- bigram PMI: embeddings/onset_tokens_arpa_bigram
+
+X
+
+Learned classes:
+	- Mayer (2020) algorithm: learned_classes/onset_type...
+		- Variance parameter? Max uses 1.5 and 2.5
+		- run without constraining initial partition 
+	- Nelson (2022) algorithms: we don't need to store these explicitly, generated as part of code
+
+Discrete embeddings:
+	- Hayes features binary: training_data/english_features.csv
+	- Learned features: training_data/..._discrete_...
+
+X
+
+Model:
+	- H & W
+		- phonetic features
+		- learned features: use this to choose variance parameter?
+
+	- Max
+		- Just run as he intended
+
+	- Bilinear
+		- phonetic features
+		- learned features
+		- continuous features
+
+	- RNN (Mayer & Nelson 2020)
+	- Simple bigram

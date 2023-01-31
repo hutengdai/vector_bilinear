@@ -1,0 +1,13 @@
+# Run from distributional_learning/code
+
+# Generate bigram pmi embeddings
+
+python3.10 VectorModelBuilder.py ../../models/training_data/onset_type_frequencies.txt --n 2 --weighting pmi --outdir ../../models/embeddings/
+
+# Cluster at various variance scalar parameters (sub for 1.5 below)
+
+python3.10 clusterer.py ../../models/embeddings/onset_type_frequencies_bigram_pmi ../../models/learned_classes/ --no_constrain_initial_partition --v_scalar 1.5
+
+# Convert learned classes to discrete classes
+
+python3.10 Featurizer.py ../../models/learned_classes/onset_type_frequencies_bigram_pmi_1_0.csv --output_file ../../models/embeddings/onset_type_frequencies_bigram_ppmi_discrete_1_0.csv --featurization inferential_complementary --use_numpy

@@ -1,0 +1,8 @@
++word_boundary
+-word_boundary
++consonantal
+-consonantal
++sonorant
+-sonorant
++syllabic
+-syllabic
