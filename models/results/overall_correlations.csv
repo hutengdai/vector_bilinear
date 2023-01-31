@@ -1,6 +1,12 @@
 term,human_response
 smoothed_bigram,0.585412959656116
 hayes_phonetic_features,0.6417476623345044
-hayes_learned_features_1_0,0.5782954768639443
-hayes_learned_features_1_5,0.5907510717502448
-hayes_learned_features_2_5,0.5533842870913437
+hayes_1_0_complementary_singletons,0.5782954768639443
+hayes_1_5_complementary_singletons,0.5907510717502448
+hayes_2_5_complementary_singletons,0.5533842870913437
+hayes_1_0_ic_no_singletons,0.4934895621305573
+hayes_1_5_ic_no_singletons,0.49259602303340366
+hayes_2_5_ic_no_singletons,0.4726310587866065
+hayes_1_0_ic_singletons,0.5925304424482877
+hayes_1_5_ic_singletons,0.5800748475619872
+hayes_2_5_ic_singletons,0.5800748475619872

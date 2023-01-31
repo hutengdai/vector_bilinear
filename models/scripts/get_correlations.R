@@ -6,9 +6,16 @@ scores <- read_csv("results/overall_scores.csv")
 
 scores <- scores %>%
   mutate(hayes_phonetic_features = hayes_phonetic_features * -1,
-         hayes_learned_features_1_0 = hayes_learned_features_1_0 * -1,
-         hayes_learned_features_1_5 = hayes_learned_features_1_5 * -1,
-         hayes_learned_features_2_5 = hayes_learned_features_2_5 * -1)
+         hayes_1_0_complementary_singletons = hayes_1_0_complementary_singletons * -1,
+         hayes_1_5_complementary_singletons = hayes_1_5_complementary_singletons * -1,
+         hayes_2_5_complementary_singletons = hayes_2_5_complementary_singletons * -1,
+         hayes_1_0_ic_no_singletons = hayes_1_0_ic_no_singletons * -1,
+         hayes_1_5_ic_no_singletons = hayes_1_5_ic_no_singletons * -1,
+         hayes_2_5_ic_no_singletons = hayes_2_5_ic_no_singletons * -1,
+         hayes_1_0_ic_singletons = hayes_1_0_ic_singletons * -1,
+         hayes_1_5_ic_singletons = hayes_1_5_ic_singletons * -1,
+         hayes_2_5_ic_singletons = hayes_2_5_ic_singletons * -1,
+  )
 
 # Overall correlations
 scores %>% 
