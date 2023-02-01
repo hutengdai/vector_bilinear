@@ -75,9 +75,9 @@ if __name__ == '__main__':
 	ppmi_judgement = "result\\induced_ppmi_class_10_27.txt"
 	binary_judgement = "result\\binary_feature_10_27.txt"
 	ternary_judgement = "result\\ternary_feature_10_27.txt"
-
+	learned_binary_feature_judgement = "result\\learned_binary_2_1.txt"
 	nelson_judgement = "result\\nelson_results\\nelson_model_judgements.txt"
-	visual_judgefile(humanJudgement,pmi_judgement)
+	visual_judgefile(humanJudgement,learned_binary_feature_judgement)
 
 # ternary:	
 # Pearsons correlation: -0.757
