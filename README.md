@@ -22,6 +22,11 @@ python bilinear.py ./input/onset_tokens_arpa_bigram_ppmi_word2vec.w2v ./input/on
 
 python bilinear.py ./input/onset_tokens_arpa_bigram_pmi_word2vec.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename ./result/induced_pmi_class_10_27.pt
 
+
+<!-- new run for new embeddings -->
+python code/bilinear.py models/embeddings/onset_type_frequencies_bigram_pmi_word2vec.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/induced_pmi_class_2_1.pt
+
+
 <!--  OLD command (output everything in the terminal to binary1.csv):
 - for binary features
 python run_learning_model.py ./input/english_binary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 ./result/binary1.csv
@@ -39,6 +44,7 @@ python run_saved_model.py ./result/ternary_feature_10_27.pt ./input/test_data_da
 python run_saved_model.py ./result/induced_ppmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_ppmi_class_10_27.txt
 python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_pmi_class_10_27.txt
 
+python code/run_saved_model.py result/induced_pmi_class_2_1.pt input/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_2_1.txt
 
     Analysizing testing result:
 

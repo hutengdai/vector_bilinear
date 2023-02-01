@@ -70,8 +70,8 @@ if __name__ == '__main__':
 	# visual_judgefile_maxent(JudgementFile)
 
 
-	humanJudgement = "data\\Daland_etal_2011__AverageScores.csv"
-	pmi_judgement = "result\\induced_pmi_class_10_27.txt"
+	humanJudgement = "input\\Daland_etal_2011__AverageScores.csv"
+	pmi_judgement = "result\\induced_pmi_class_2_1.txt"
 	ppmi_judgement = "result\\induced_ppmi_class_10_27.txt"
 	binary_judgement = "result\\binary_feature_10_27.txt"
 	ternary_judgement = "result\\ternary_feature_10_27.txt"
