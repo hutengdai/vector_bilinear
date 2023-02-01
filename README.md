@@ -44,7 +44,7 @@ python run_saved_model.py ./result/ternary_feature_10_27.pt ./input/test_data_da
 python run_saved_model.py ./result/induced_ppmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_ppmi_class_10_27.txt
 python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_pmi_class_10_27.txt
 
-python code/run_saved_model.py result/induced_pmi_class_2_1.pt input/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_2_1.txt
+python code/run_saved_model.py result/induced_pmi_class_2_1.pt models/testing_data/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_2_1.txt
 
     Analysizing testing result:
 
