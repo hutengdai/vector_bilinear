@@ -482,9 +482,9 @@ def train(model, train_data, dev_data=None, test_data=None, w_vocab=None, c_voca
 				diagnostic['dev_loss'] = dev_loss
 
 			if test_data is not None:
-			   est = loglogit(-me(test_tokens))
-			   obs = loglogit(test_values)
-			   diagnostic['test_err'] = ((est - obs)**2).mean().item()
+				est = loglogit(-me(test_tokens))
+				obs = loglogit(test_values)
+				diagnostic['test_err'] = ((est - obs)**2).mean().item()
 
 			curr_time = datetime.datetime.now()
 			diagnostic['time'] = str(curr_time - start)
