@@ -2,13 +2,16 @@ library(tidyverse)
 library(corrr)
 library(GGally)
 
-setwd("E:/git_repos/DFM/models")
-#setwd("C:/Users/conno/git_repos/vector_bilinear/models")
+#setwd("E:/git_repos/DFM/models")
+setwd("C:/Users/conno/git_repos/vector_bilinear/models")
 scores <- read_csv("results/overall_scores.csv")
 
 scores <- scores %>%
   mutate(hayes_phonetic_features = hayes_phonetic_features * -1,
          hayes_learned_features = hayes_learned_features * -1,
+         continuous_pmi = continuous_pmi * -1,
+         discrete_binary_phonetic = discrete_binary_phonetic * -1,
+         discrete_binary_learned = discrete_binary_learned * -1
   )
 
 # Overall correlations
