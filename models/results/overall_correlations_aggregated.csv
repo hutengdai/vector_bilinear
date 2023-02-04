@@ -1,0 +1,8 @@
+term,likert_rating
+smoothed_bigram,0.585412959656116
+hayes_phonetic_features,0.6417476623345044
+hayes_learned_features,0.5925304424482877
+max_sc_kld,0.6194582004719346
+continuous_pmi,0.6333185089007967
+discrete_binary_phonetic,0.6298972271071887
+discrete_binary_learned,0.6067654080326309

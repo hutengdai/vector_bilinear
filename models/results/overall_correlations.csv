@@ -1,8 +1,8 @@
-term,human_response
-smoothed_bigram,0.585412959656116
-hayes_phonetic_features,0.6417476623345044
-hayes_learned_features,0.5925304424482877
-max_sc_kld,0.6194582004719346
-continuous_pmi,0.6333185089007967
-discrete_binary_phonetic,0.6298972271071887
-discrete_binary_learned,0.6067654080326309
+term,likert_rating
+smoothed_bigram,0.6697755981614988
+hayes_phonetic_features,0.6740704640463273
+hayes_learned_features,0.6346995144659348
+max_sc_kld,0.49570270308805675
+continuous_pmi,0.6998793267204919
+discrete_binary_phonetic,0.6462435420113103
+discrete_binary_learned,0.6595635737944359
