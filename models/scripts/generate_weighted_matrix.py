@@ -12,8 +12,10 @@ N = 2
 
 def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec):
     if not model_name:
+        # Model name is dataset + weighting if not specified
         model_name = path.split(dataset)[-1].split('.')[0] + "_{}".format(weighting)
 
+    # Read in data and add padding symbols
     with open(dataset, 'r') as f:
         reader = csv.reader(f)
         # Add our own padding symbols
@@ -22,34 +24,90 @@ def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec):
             for token in reader
         ]
 
+    # Count bigrams. These are only used in the w2v output
     bigrams = [gram for token in tokens for gram in ngrams(token, 2)]
     bigram_counts = FreqDist(bigrams)
 
-    # Train forwards LM
+    # Train forwards LM to get probabilities for X _ contexts
     f_train, f_vocab = padded_everygram_pipeline(N, tokens)
     f_model = KneserNeyInterpolated(N)
     f_model.fit(f_train, f_vocab)
 
-    # Train backwards LM
+    # Train backwards LM to get probabiliteis for _ X contexts
     reversed_tokens = [list(reversed(token)) for token in tokens]
     b_train, b_vocab = padded_everygram_pipeline(N, reversed_tokens)
     b_model = KneserNeyInterpolated(N)
     b_model.fit(b_train, b_vocab)
 
+    # Create (P)PMI matrix for both models independently
     f_matrix, symbols = create_matrix(f_model, weighting)
     b_matrix, _ = create_matrix(b_model, weighting)
 
+    # Create names of contexts for each model
     f_contexts = ['{}_'.format(s) for s in symbols]
     b_contexts = ['_{}'.format(s) for s in symbols]
-
     contexts = f_contexts + b_contexts
 
+    # Concatenate forward and backward (P)PMI matrices
     full_matrix = np.concatenate((f_matrix, b_matrix), axis=1)
 
+    # Save matrix to output file
     save_matrix(
         full_matrix, symbols, contexts, model_name, 
         outdir, word2vec, bigram_counts
     )    
+
+def create_matrix(model, weighting):
+    # Get list of unique symbols
+    symbols = sorted(model.vocab.counts.keys())
+
+    # Removing nltk-provided padding symbols since we don't
+    # want embeddings for these
+    symbols.remove('<s>')
+    symbols.remove('</s>')
+    num_syms = len(symbols)
+
+    # Initialize probability matrix
+    matrix = np.zeros([num_syms, num_syms])
+
+    # Each cell in this matrix is P(s|c)
+    # If the <s> and </s> symbols were included the columns of the matrix
+    # would each sum to 1,  
+    for i, s in enumerate(symbols):
+        for j, c in enumerate(symbols):
+            matrix[i,j] = model.score(s, [c])
+
+    # Renormalize by column since we removed the boundary symbols
+    matrix = matrix / matrix.sum(axis=0)
+
+    # Covnert matrix to (P)PMI
+    w_matrix = weight_matrix(matrix, weighting)
+
+    return w_matrix, symbols
+
+def weight_matrix(matrix, weighting):
+    # Input matrix is P(s|c)
+    # Get P(s) (= P(c)) by summing over all contexts
+    p_s = matrix.sum(axis=1).reshape(-1, 1) / matrix.sum()
+
+    # Then convert to P(s,c) = P(s|c) * P(c)
+    matrix *= p_s.transpose()
+
+    # Then compute P(s) * P(c)
+    denominator = p_s * p_s.transpose()
+
+    # Calculate PMI
+    pmi_matrix = np.log(matrix / denominator)
+
+    # Convert to PPMI if needed
+    if weighting == 'pmi':
+        result = pmi_matrix
+    elif weighting == 'ppmi':
+        result = np.maximum(pmi_matrix, 0)
+    else:
+        raise "Unknown weighting {}".format(weighting)
+
+    return result
 
 def save_matrix(matrix, symbols, contexts, model_name, outdir, word2vec, 
                 bigram_counts):
@@ -79,54 +137,6 @@ def save_matrix(matrix, symbols, contexts, model_name, outdir, word2vec,
         # Record contexts too in case we need them later
         with open(path.join(outdir, '{}.contexts'.format(model_name)), 'w') as f:
             print(' '.join(contexts), file=f)
-
-def create_matrix(model, weighting):
-    symbols = sorted(model.vocab.counts.keys())
-    symbols.remove('<s>')
-    symbols.remove('</s>')
-    num_syms = len(symbols)
-
-    matrix = np.zeros([num_syms, num_syms])
-
-    # Each cell in this matrix is P(s|c)
-    # If the <s> and </s> symbols were included the columns of the matrix
-    # would each sum to 1,  
-    for i, s in enumerate(symbols):
-        for j, c in enumerate(symbols):
-            matrix[i,j] = model.score(s, [c])
-
-    # Renormalize by column since we removed the boundary symbols
-    matrix = matrix / matrix.sum(axis=0)
-
-    w_matrix = weight_matrix(matrix, weighting)
-
-    return w_matrix, symbols
-
-def weight_matrix(matrix, weighting):
-    weighted_matrix = np.zeros(matrix.shape)
-
-    # Input matrix is P(s|c)
-    # Get P(s) (= P(c)) by summing
-    # over all contexts
-    p_s = matrix.sum(axis=1).reshape(-1, 1) / matrix.sum()
-
-    # First convert to P(s,c) = P(s|c) * P(c)
-    matrix *= p_s.transpose()
-    
-    # Then compute P(s) * P(c)
-    denominator = p_s * p_s.transpose()
-
-    # Calculate PMI
-    pmi_matrix = np.log(matrix / denominator)
-
-    if weighting == 'pmi':
-        result = pmi_matrix
-    elif weighting == 'ppmi':
-        result = np.maximum(pmi_matrix, 0)
-    else:
-        raise "Unknown weighting {}".format(weighting)
-
-    return result
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
