@@ -81,7 +81,6 @@ def save_matrix(matrix, symbols, contexts, model_name, outdir, word2vec,
             print(' '.join(contexts), file=f)
 
 def create_matrix(model, weighting):
-    # This only actually works with n=2, can fix later
     symbols = sorted(model.vocab.counts.keys())
     symbols.remove('<s>')
     symbols.remove('</s>')
@@ -106,13 +105,14 @@ def create_matrix(model, weighting):
 def weight_matrix(matrix, weighting):
     weighted_matrix = np.zeros(matrix.shape)
 
-    # Get probabilities of individual symbols by summing
+    # Input matrix is P(s|c)
+    # Get P(s) (= P(c)) by summing
     # over all contexts
     p_s = matrix.sum(axis=1).reshape(-1, 1) / matrix.sum()
 
-    # Input matrix is P(s|c)
     # First convert to P(s,c) = P(s|c) * P(c)
     matrix *= p_s.transpose()
+    
     # Then compute P(s) * P(c)
     denominator = p_s * p_s.transpose()
 
