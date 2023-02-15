@@ -33,6 +33,10 @@ python code/bilinear.py models/embeddings/onset_type_frequencies_pmi.w2v input/o
 <!-- Run learned continuous -->
 python code/bilinear.py models/embeddings/discrete_distributional_features.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/induced_discrete_class_2_14.pt
 
+<!-- Run toy example -->
+python code/bilinear.py input/training_toy_noCC_bigram_pmi_word2vec.w2v input/training_toy_noCC_bigram_pmi_word2vec.ngrams1 --dev input/training_toy_noCC_bigram_pmi_word2vec.ngrams2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/toy_pmi_2_14.pt
+
+python code/bilinear.py models/embeddings/lm_embeddings_2/onset_type_frequencies_pmi.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/onset_type_frequencies_pmi_2_15.pt
 
 <!--  OLD command (output everything in the terminal to binary1.csv):
 - for binary features
@@ -51,6 +55,8 @@ python run_saved_model.py ./result/ternary_feature_10_27.pt ./input/test_data_da
 python run_saved_model.py ./result/induced_ppmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_ppmi_class_10_27.txt
 python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_pmi_class_10_27.txt
 
+
+
 python code/run_saved_model.py result/induced_pmi_class_2_1.pt models/testing_data/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_2_1.txt
 
 python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_daland_et_al_arpa_onset_only.txt ./result/induced_pmi_class_10_27.txt
@@ -58,6 +64,8 @@ python run_saved_model.py ./result/induced_pmi_class_10_27.pt ./input/test_data_
 python code/run_saved_model.py result/induced_pmi_class_2_14.pt input/test_data_daland_et_al_arpa_onset_only.txt result/induced_pmi_class_2_14.txt
 
 python code/run_saved_model.py result/induced_discrete_class_2_14.pt input/test_data_daland_et_al_arpa_onset_only.txt result/induced_discrete_class_2_14.txt
+
+python code/run_saved_model.py result/toy_pmi_2_14.pt input/testing_toy_noCC.txt result/toy_pmi_2_14.txt
 
     Analysizing testing result:
 

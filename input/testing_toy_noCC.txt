@@ -1,0 +1,6 @@
+V C V V
+C V C V
+V V V V
+C C C C
+C C C V
+V C C C
