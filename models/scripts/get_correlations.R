@@ -3,8 +3,8 @@ library(corrr)
 library(GGally)
 library(ggrepel)
 
-#setwd("E:/git_repos/DFM/models")
-setwd("C:/Users/conno/git_repos/vector_bilinear/models")
+setwd("E:/git_repos/DFM/models")
+#setwd("C:/Users/conno/git_repos/vector_bilinear/models")
 
 scores_full <- read_csv("results/overall_scores.csv")
 
@@ -76,27 +76,27 @@ grouped_r %>%
          tau=likert_rating.y) %>%
   select(-likert_rating.x, -likert_rating.y) %>%
   write_csv('results/grouped_correlations.csv')
-
-plot_scores_full <- scores_full %>%
-  pivot_longer(c(-onset, -attestedness, -likert_rating), names_to="model", values_to="score")
-
-ggplot(plot_scores_full, aes(likert_rating, score, label=onset)) +
-  geom_point() + 
-  geom_text_repel(size=2) +
-  facet_wrap(~model, scale="free")
-ggsave("models_plot.png")
-
-plot_scores_full %>%
-  filter(model == 'hayes_phonetic_features' | model == 'bl_continuous_pmi') %>%
-  mutate(model = ifelse(model == 'hayes_phonetic_features', 'H&W - discrete phonetic features', 'Log-bilinear - continuous distributional features')) %>%
-  ggplot(aes(x=likert_rating, y=score, label=onset, color=attestedness)) +
-  geom_point(size=2) +
-  geom_text_repel(size=3.5, show.legend = FALSE) +
-  facet_wrap(~ model, scale="free", nrow=2) +
-  ylab("Score") + 
-  xlab("Likert rating") +
-  scale_color_discrete(name = "Attestedness") +
-  theme_classic() +
-  theme(legend.position = c(0.87, 0.15))
-
-ggsave("figures/scatterplots.png")
+# 
+# plot_scores_full <- scores_full %>%
+#   pivot_longer(c(-onset, -attestedness, -likert_rating), names_to="model", values_to="score")
+# 
+# ggplot(plot_scores_full, aes(likert_rating, score, label=onset)) +
+#   geom_point() + 
+#   geom_text_repel(size=2) +
+#   facet_wrap(~model, scale="free")
+# ggsave("models_plot.png")
+# 
+# plot_scores_full %>%
+#   filter(model == 'hayes_phonetic_features' | model == 'bl_continuous_pmi') %>%
+#   mutate(model = ifelse(model == 'hayes_phonetic_features', 'H&W - discrete phonetic features', 'Log-bilinear - continuous distributional features')) %>%
+#   ggplot(aes(x=likert_rating, y=score, label=onset, color=attestedness)) +
+#   geom_point(size=2) +
+#   geom_text_repel(size=3.5, show.legend = FALSE) +
+#   facet_wrap(~ model, scale="free", nrow=2) +
+#   ylab("Score") + 
+#   xlab("Likert rating") +
+#   scale_color_discrete(name = "Attestedness") +
+#   theme_classic() +
+#   theme(legend.position = c(0.87, 0.15))
+# 
+# ggsave("figures/scatterplots.png")
