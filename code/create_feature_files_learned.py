@@ -52,11 +52,11 @@ with open('models/embeddings/discrete_distributional_features.csv', 'r') as f:
 #     writer.writerows(trinary_output)
 
 
-with open('models/embeddings/learned_binary_features_columns.txt', 'w') as f:
+with open('models/embeddings/discrete_distributional_features_columns.txt', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(binary_contexts)
 
-with open('models/embeddings/learned_binary_features.w2v', 'w') as f:
+with open('models/embeddings/discrete_distributional_features.w2v', 'w') as f:
     writer = csv.writer(f, delimiter=' ')
     writer.writerow([len(binary_output), len(binary_output[0]) - 1])
     writer.writerows(binary_output)
