@@ -14,11 +14,12 @@ scores_full <- scores_full %>%
          bl_continuous_pmi = -bl_continuous_pmi,
          bl_discrete_binary_phonetic = -bl_discrete_binary_phonetic,
          bl_discrete_binary_learned = -bl_discrete_binary_learned,
-         bl_continuous_type = -bl_continuous_type,
-         bl_continuous_laplace = -bl_continuous_laplace,
-         hayes_learned_features_lm = -hayes_learned_features_lm,
-         bl_discrete_lm = -bl_discrete_lm,
-         bl_continuous_lm = -bl_continuous_lm
+         bl_continuous_lm_token = -bl_continuous_lm_token,
+         bl_continuous_lm_laplace = -bl_continuous_lm_laplace,
+         hayes_learned_features_lm_token = -hayes_learned_features_lm_token,
+         bl_discrete_lm_token = -bl_discrete_lm_token,
+         bl_continuous_lm_type_1 = -bl_continuous_lm_type_1,
+         bl_continuous_lm_type_2 = -bl_continuous_lm_type_2
   ) %>%
   select(-max_rcc_cov, -max_rcc_kld, -max_sc_kld)
 
