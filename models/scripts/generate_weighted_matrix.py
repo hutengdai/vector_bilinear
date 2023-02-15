@@ -112,6 +112,11 @@ def weight_matrix(matrix, weighting):
 def save_matrix(matrix, symbols, contexts, model_name, outdir, word2vec, 
                 bigram_counts):
     if not word2vec:
+        # Don't produce embedding of word boundary unless we're
+        # using word2vec output
+        matrix = np.delete(matrix, symbols.index('#'), axis=0)
+        symbols.remove('#')
+
         np.savetxt(path.join(
             outdir, '{}.data'.format(model_name)), matrix, fmt='%f'
         )
