@@ -28,7 +28,7 @@ def create_binary_contexts(feature_name):
     else:
         return ['']
 
-with open('models/embeddings/onset_type_frequencies_bigram_pmi_discrete.csv', 'r') as f:
+with open('models/embeddings/discrete_distributional_features.csv', 'r') as f:
     reader = csv.reader(f)
 
     trinary_contexts = next(reader)
@@ -42,9 +42,15 @@ with open('models/embeddings/onset_type_frequencies_bigram_pmi_discrete.csv', 'r
         binary_output.append(binary_row)
         trinary_output.append(trinary_row)
     
-with open('models/embeddings/learned_trinary_features_columns.txt', 'w') as f:
-    writer = csv.writer(f)
-    writer.writerow(trinary_contexts)
+# with open('models/embeddings/learned_trinary_features_columns.txt', 'w') as f:
+#     writer = csv.writer(f)
+#     writer.writerow(trinary_contexts)
+
+# with open('models/embeddings/learned_trinary_features.w2v', 'w') as f:
+#     writer = csv.writer(f, delimiter=' ')
+#     writer.writerow([len(trinary_output), len(trinary_output[0]) - 1])
+#     writer.writerows(trinary_output)
+
 
 with open('models/embeddings/learned_binary_features_columns.txt', 'w') as f:
     writer = csv.writer(f)
@@ -54,8 +60,3 @@ with open('models/embeddings/learned_binary_features.w2v', 'w') as f:
     writer = csv.writer(f, delimiter=' ')
     writer.writerow([len(binary_output), len(binary_output[0]) - 1])
     writer.writerows(binary_output)
-
-with open('models/embeddings/learned_trinary_features.w2v', 'w') as f:
-    writer = csv.writer(f, delimiter=' ')
-    writer.writerow([len(trinary_output), len(trinary_output[0]) - 1])
-    writer.writerows(trinary_output)
