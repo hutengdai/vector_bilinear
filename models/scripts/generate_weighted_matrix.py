@@ -10,7 +10,7 @@ from os import path
 
 N = 2
 
-def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec):
+def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec, discard_duplicates):
     if not model_name:
         # Model name is dataset + weighting if not specified
         model_name = path.split(dataset)[-1].split('.')[0] + "_{}".format(weighting)
@@ -23,6 +23,8 @@ def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec):
             ['#'] + token[0].split(' ') + ['#']
             for token in reader
         ]
+    if discard_duplicates:
+        tokens = list(set(tuple(x) for x in tokens))
 
     # Count bigrams. These are only used in the w2v output
     bigrams = [gram for token in tokens for gram in ngrams(token, 2)]
@@ -167,9 +169,13 @@ if __name__ == "__main__":
         '--word2vec', action="store_true",
         help='Output embeddings will be in word2vec format'
     )
+    parser.add_argument(
+        '--discard_duplicates', action="store_true",
+        help="Throw out duplicate tokens"
+    )
 
     args = parser.parse_args()
     create_weighted_matrix(
         args.dataset, args.weighting, args.outfile, args.outdir, 
-        args.word2vec
+        args.word2vec, args.discard_duplicates
     )
