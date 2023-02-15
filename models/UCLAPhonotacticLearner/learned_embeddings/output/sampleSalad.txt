@@ -1,0 +1,3956 @@
+S P R 
+S T R 
+S T R 
+S T R 
+S P R 
+S T R 
+S K W 
+S P R 
+S T R 
+S T R 
+S T R 
+S T R 
+S K R 
+S T R 
+S P L 
+S P R 
+S K R 
+S K W 
+S P R 
+K L R 
+S T R 
+S K W 
+S T R 
+S P R 
+S T R 
+S K L 
+S K W 
+S P R 
+S P L 
+S T R 
+S K W 
+S P R 
+S T R 
+S T R 
+S T R 
+S T R 
+S P L 
+S K L 
+S T R 
+S T R 
+S T R 
+S T R 
+S P R 
+S K L 
+S T R 
+S P R 
+S T R 
+S T W 
+S P R 
+S P L 
+S P R 
+S T R 
+S P R 
+F R 
+B R 
+F L 
+F R 
+K L 
+K W 
+F R 
+P R 
+S L 
+P R 
+D R 
+HH W 
+P R 
+P L 
+G R 
+S P 
+P R 
+S P 
+P R 
+G R 
+S T 
+P R 
+G R 
+S K 
+D R 
+P R 
+S P 
+S T 
+D L 
+P R 
+S W 
+B L 
+G L 
+S L 
+B L 
+P R 
+T R 
+P L 
+F R 
+P R 
+SH R 
+K R 
+P R 
+S W 
+F L 
+K L 
+D R 
+B R 
+F R 
+K W 
+S K 
+F L 
+K W 
+S K 
+S N 
+S T 
+P W 
+S T 
+G L 
+G L 
+P L 
+HH W 
+K R 
+G L 
+F L 
+S K 
+HH W 
+T R 
+G R 
+T R 
+G R 
+P L 
+K L 
+G R 
+S T 
+K R 
+P R 
+S T 
+S P 
+HH W 
+T R 
+S P 
+F L 
+S W 
+P R 
+S K 
+K R 
+S T 
+D W 
+K W 
+F L 
+K R 
+K L 
+S N 
+P R 
+B R 
+T R 
+HH W 
+G R 
+S P 
+T R 
+P R 
+K R 
+S L 
+D R 
+P R 
+T R 
+B R 
+S L 
+G R 
+F R 
+S P 
+S T 
+HH W 
+K R 
+P R 
+P R 
+HH W 
+T R 
+K R 
+T W 
+P R 
+K W 
+P R 
+S W 
+P R 
+G R 
+K W 
+B R 
+K L 
+K W 
+P R 
+F R 
+D R 
+P R 
+P R 
+K W 
+B R 
+T W 
+D R 
+P R 
+K R 
+P L 
+S W 
+T R 
+P R 
+S K 
+K R 
+G R 
+P L 
+S T 
+P R 
+P R 
+K R 
+T R 
+S L 
+B R 
+S L 
+S W 
+P R 
+G R 
+P R 
+S K 
+D R 
+K R 
+P L 
+K W 
+G R 
+P L 
+K W 
+T R 
+HH W 
+S K 
+K R 
+G R 
+D R 
+K W 
+K R 
+P L 
+S P 
+T R 
+P R 
+S W 
+D R 
+S W 
+K R 
+K R 
+P R 
+K W 
+F R 
+S K 
+P R 
+F R 
+S K 
+G R 
+P R 
+K R 
+S T 
+F L 
+G L 
+P R 
+F L 
+K L 
+T R 
+K W 
+S M 
+S L 
+D R 
+TH R 
+S T 
+K R 
+P R 
+SH R 
+D R 
+S K 
+D R 
+G R 
+S L 
+S K 
+K R 
+B R 
+K R 
+S N 
+G R 
+S P 
+K R 
+K R 
+P R 
+G R 
+D R 
+P R 
+S L 
+K W 
+K L 
+P R 
+T W 
+T W 
+S K 
+T R 
+P R 
+P L 
+S W 
+P R 
+K R 
+P L 
+P L 
+S N 
+P R 
+P R 
+F L 
+K L 
+K R 
+S N 
+T R 
+R R 
+K W 
+K L 
+K R 
+K R 
+D W 
+B L 
+B R 
+K W 
+F R 
+S K 
+D R 
+G L 
+K R 
+D R 
+S T 
+T R 
+K W 
+S T 
+S L 
+K L 
+HH W 
+K W 
+S W 
+G L 
+F L 
+F L 
+T R 
+P R 
+T R 
+T R 
+K W 
+P L 
+S T 
+S T 
+S K 
+P R 
+T R 
+S T 
+S L 
+P L 
+B L 
+S L 
+F R 
+P R 
+P R 
+S T 
+F R 
+TH R 
+S P 
+S P 
+P R 
+B R 
+S W 
+S T 
+F R 
+D L 
+F R 
+S R 
+T R 
+P L 
+B R 
+P R 
+P R 
+T R 
+T R 
+K W 
+G R 
+G L 
+P R 
+SH R 
+S T 
+K L 
+P R 
+P R 
+P R 
+HH W 
+S T 
+B R 
+P R 
+F R 
+S K 
+HH W 
+P R 
+B R 
+G L 
+S T 
+S M 
+G R 
+B R 
+P R 
+P R 
+S T 
+S W 
+P L 
+P R 
+G R 
+T R 
+S K 
+K R 
+S P 
+S T 
+D R 
+S HH 
+F R 
+K L 
+S M 
+B R 
+F R 
+S T 
+B L 
+D R 
+S P 
+K L 
+P R 
+P R 
+T R 
+P R 
+S N 
+G L 
+B R 
+S L 
+K R 
+K W 
+P R 
+G R 
+D R 
+S T 
+R R 
+K R 
+T R 
+S K 
+SH R 
+P R 
+T R 
+P L 
+P R 
+P R 
+S P 
+G R 
+K L 
+S T 
+P R 
+S T 
+B L 
+S W 
+HH W 
+T R 
+K W 
+P R 
+P R 
+P R 
+G R 
+B R 
+HH W 
+P R 
+T R 
+K R 
+P R 
+G R 
+P L 
+P R 
+B L 
+F L 
+S L 
+D R 
+P R 
+T R 
+F L 
+D R 
+G L 
+T R 
+D R 
+S T 
+B R 
+P R 
+P R 
+P R 
+G R 
+K R 
+K R 
+P R 
+P L 
+P R 
+P L 
+S T 
+P R 
+K R 
+P R 
+T R 
+G W 
+P L 
+K L 
+F L 
+S T 
+K R 
+G R 
+TH R 
+S P 
+G R 
+S K 
+S K 
+T R 
+B R 
+P R 
+HH W 
+S T 
+K W 
+K L 
+S T 
+K L 
+P L 
+K R 
+P R 
+S K 
+K W 
+P R 
+K L 
+B R 
+S M 
+S T 
+F R 
+D R 
+P R 
+T R 
+P R 
+F L 
+B R 
+S T 
+B R 
+S K 
+S L 
+B R 
+T R 
+S P 
+F R 
+P R 
+K R 
+P R 
+T R 
+S K 
+S T 
+P R 
+S K 
+S K 
+D R 
+G R 
+S T 
+P R 
+S T 
+B R 
+P R 
+L R 
+S K 
+F L 
+P L 
+F L 
+S L 
+P L 
+P R 
+S W 
+B L 
+T R 
+P R 
+F R 
+G R 
+S K 
+P R 
+B R 
+K L 
+T W 
+P R 
+S M 
+N R 
+T R 
+K L 
+F L 
+K W 
+P R 
+HH W 
+B R 
+T R 
+S M 
+P R 
+T R 
+F L 
+S K 
+B R 
+HH W 
+S P 
+B R 
+F R 
+SH R 
+S T 
+F L 
+G L 
+P R 
+F R 
+T R 
+P L 
+G R 
+D R 
+G R 
+S L 
+P R 
+T R 
+B L 
+G R 
+B R 
+S P 
+S P 
+P R 
+K W 
+T R 
+K R 
+B L 
+S K 
+TH R 
+T R 
+HH W 
+D R 
+P R 
+K R 
+D W 
+D R 
+S P 
+S M 
+T R 
+B R 
+K W 
+D R 
+P L 
+S K 
+G L 
+K L 
+D R 
+D R 
+P R 
+F L 
+S N 
+S W 
+P L 
+P R 
+P R 
+K R 
+K L 
+S L 
+T R 
+S M 
+S K 
+K L 
+B R 
+P R 
+B L 
+S T 
+P R 
+S T 
+K L 
+G R 
+K L 
+S L 
+P R 
+S N 
+T R 
+S T 
+F L 
+F L 
+P R 
+S N 
+K R 
+S K 
+P R 
+F R 
+G L 
+T R 
+F R 
+S K 
+P L 
+S W 
+S W 
+S K 
+F R 
+D R 
+P L 
+G R 
+F L 
+S K 
+D R 
+S N 
+G L 
+F L 
+S W 
+K W 
+P R 
+S T 
+P L 
+P R 
+S T 
+K W 
+P R 
+F R 
+T R 
+TH R 
+P R 
+G W 
+S K 
+S T 
+B L 
+K R 
+P R 
+S M 
+T R 
+K R 
+S T 
+K R 
+S P 
+S W 
+TH R 
+K R 
+S L 
+S K 
+D R 
+T R 
+S L 
+P R 
+S N 
+S W 
+S W 
+S T 
+K L 
+D R 
+T R 
+B L 
+S P 
+S M 
+S P 
+T W 
+HH W 
+F R 
+B L 
+T W 
+B R 
+B R 
+P R 
+P R 
+K W 
+P R 
+S K 
+S P 
+B L 
+B L 
+G R 
+S T 
+K W 
+HH W 
+D R 
+P R 
+G R 
+P R 
+D R 
+P R 
+P R 
+F L 
+P L 
+S T 
+G R 
+K R 
+S N 
+HH W 
+P R 
+S W 
+P R 
+T R 
+T R 
+F R 
+F R 
+S N 
+S K 
+S T 
+G R 
+S L 
+P L 
+S T 
+B R 
+S T 
+T R 
+P R 
+S W 
+P R 
+K R 
+S W 
+T R 
+G R 
+T R 
+P L 
+T R 
+HH W 
+P R 
+F L 
+F L 
+S T 
+B R 
+P L 
+S T 
+F L 
+K R 
+K R 
+P R 
+T W 
+T R 
+S W 
+T R 
+G L 
+K R 
+S HH 
+T R 
+K L 
+S T 
+B R 
+T R 
+S W 
+P R 
+P R 
+HH W 
+S K 
+S T 
+S M 
+S N 
+K L 
+B L 
+P R 
+S K 
+P R 
+P R 
+S P 
+S T 
+P R 
+B R 
+S M 
+S T 
+G R 
+S K 
+T R 
+P R 
+B R 
+G L 
+S T 
+W 
+HH 
+L 
+R 
+M 
+D 
+S 
+M 
+S 
+S 
+M 
+D 
+R 
+M 
+L 
+R 
+D 
+T 
+D 
+F 
+B 
+D 
+T 
+K 
+G 
+B 
+S 
+D 
+HH 
+S 
+G 
+JH 
+P 
+M 
+L 
+S 
+JH 
+P 
+T 
+P 
+N 
+R 
+K 
+R 
+D 
+G 
+K 
+R 
+N 
+V 
+G 
+V 
+R 
+R 
+R 
+R 
+V 
+F 
+M 
+M 
+K 
+M 
+G 
+T 
+D 
+P 
+CH 
+L 
+R 
+S 
+B 
+L 
+P 
+P 
+M 
+M 
+R 
+R 
+R 
+P 
+D 
+JH 
+T 
+M 
+S 
+T 
+L 
+F 
+T 
+M 
+P 
+B 
+F 
+P 
+HH 
+P 
+S 
+D 
+W 
+R 
+D 
+R 
+T 
+F 
+JH 
+D 
+K 
+L 
+SH 
+R 
+K 
+L 
+R 
+R 
+K 
+P 
+P 
+R 
+S 
+B 
+S 
+F 
+D 
+SH 
+R 
+S 
+R 
+Y 
+D 
+R 
+B 
+R 
+T 
+M 
+JH 
+K 
+D 
+SH 
+P 
+P 
+D 
+B 
+N 
+HH 
+B 
+K 
+R 
+R 
+D 
+D 
+P 
+D 
+JH 
+R 
+K 
+M 
+F 
+P 
+W 
+HH 
+F 
+S 
+F 
+K 
+M 
+K 
+D 
+R 
+F 
+P 
+B 
+K 
+R 
+W 
+B 
+K 
+R 
+W 
+R 
+D 
+HH 
+K 
+F 
+S 
+M 
+M 
+D 
+D 
+JH 
+G 
+T 
+D 
+P 
+V 
+T 
+R 
+D 
+T 
+S 
+R 
+S 
+JH 
+M 
+HH 
+F 
+T 
+F 
+HH 
+K 
+D 
+D 
+R 
+F 
+M 
+F 
+S 
+W 
+Z 
+F 
+V 
+R 
+V 
+M 
+HH 
+V 
+B 
+R 
+G 
+S 
+JH 
+P 
+M 
+P 
+P 
+S 
+R 
+B 
+L 
+V 
+D 
+V 
+S 
+D 
+K 
+N 
+CH 
+S 
+P 
+P 
+M 
+D 
+R 
+B 
+K 
+B 
+K 
+K 
+R 
+K 
+M 
+K 
+D 
+K 
+D 
+S 
+B 
+S 
+L 
+D 
+F 
+M 
+D 
+S 
+M 
+K 
+HH 
+HH 
+P 
+L 
+M 
+L 
+M 
+HH 
+S 
+D 
+V 
+K 
+K 
+K 
+D 
+R 
+K 
+L 
+D 
+P 
+D 
+K 
+B 
+HH 
+K 
+S 
+M 
+N 
+K 
+Y 
+K 
+R 
+T 
+R 
+D 
+R 
+K 
+B 
+M 
+S 
+B 
+P 
+HH 
+HH 
+V 
+CH 
+D 
+L 
+S 
+M 
+HH 
+D 
+B 
+W 
+M 
+HH 
+Z 
+B 
+D 
+D 
+K 
+R 
+T 
+T 
+T 
+D 
+T 
+L 
+R 
+D 
+F 
+M 
+HH 
+D 
+M 
+T 
+G 
+W 
+T 
+F 
+F 
+SH 
+S 
+HH 
+K 
+N 
+D 
+P 
+HH 
+P 
+D 
+R 
+L 
+K 
+D 
+P 
+JH 
+R 
+S 
+R 
+M 
+F 
+F 
+R 
+K 
+K 
+S 
+W 
+HH 
+B 
+D 
+W 
+F 
+N 
+S 
+R 
+M 
+K 
+S 
+K 
+L 
+L 
+N 
+L 
+M 
+JH 
+JH 
+S 
+W 
+B 
+D 
+K 
+JH 
+F 
+B 
+D 
+R 
+S 
+R 
+D 
+S 
+L 
+K 
+D 
+T 
+L 
+S 
+F 
+B 
+F 
+D 
+D 
+L 
+D 
+K 
+M 
+D 
+N 
+M 
+HH 
+B 
+V 
+HH 
+L 
+M 
+T 
+N 
+HH 
+B 
+V 
+B 
+K 
+T 
+P 
+R 
+L 
+F 
+D 
+M 
+S 
+D 
+K 
+K 
+HH 
+D 
+L 
+P 
+P 
+B 
+R 
+T 
+K 
+HH 
+L 
+B 
+K 
+M 
+K 
+L 
+B 
+S 
+D 
+D 
+L 
+S 
+S 
+S 
+K 
+D 
+K 
+S 
+B 
+B 
+R 
+S 
+K 
+CH 
+F 
+R 
+D 
+S 
+M 
+R 
+T 
+S 
+S 
+D 
+S 
+R 
+D 
+D 
+R 
+K 
+B 
+R 
+M 
+S 
+L 
+CH 
+T 
+R 
+F 
+N 
+K 
+P 
+TH 
+G 
+K 
+R 
+T 
+S 
+P 
+R 
+M 
+W 
+R 
+P 
+K 
+K 
+N 
+M 
+HH 
+S 
+P 
+K 
+D 
+R 
+R 
+S 
+F 
+R 
+K 
+B 
+D 
+R 
+D 
+R 
+HH 
+B 
+R 
+S 
+L 
+S 
+HH 
+W 
+S 
+T 
+HH 
+M 
+K 
+K 
+T 
+JH 
+S 
+S 
+B 
+B 
+S 
+D 
+S 
+R 
+K 
+D 
+M 
+K 
+N 
+D 
+T 
+B 
+T 
+P 
+M 
+M 
+S 
+V 
+N 
+B 
+V 
+K 
+L 
+M 
+G 
+R 
+M 
+W 
+M 
+K 
+R 
+L 
+K 
+M 
+P 
+SH 
+S 
+F 
+M 
+P 
+S 
+F 
+F 
+D 
+W 
+F 
+S 
+B 
+P 
+S 
+R 
+M 
+M 
+F 
+W 
+HH 
+D 
+K 
+D 
+P 
+M 
+Y 
+M 
+W 
+S 
+R 
+Y 
+K 
+V 
+V 
+R 
+P 
+S 
+TH 
+HH 
+B 
+HH 
+CH 
+W 
+L 
+F 
+V 
+G 
+S 
+S 
+P 
+M 
+R 
+F 
+N 
+HH 
+T 
+R 
+S 
+P 
+K 
+S 
+K 
+D 
+R 
+S 
+B 
+L 
+D 
+JH 
+D 
+D 
+S 
+W 
+R 
+L 
+B 
+D 
+M 
+K 
+S 
+S 
+P 
+HH 
+D 
+T 
+K 
+T 
+M 
+M 
+D 
+F 
+CH 
+M 
+N 
+R 
+F 
+HH 
+S 
+R 
+G 
+B 
+L 
+HH 
+F 
+R 
+W 
+P 
+D 
+K 
+D 
+T 
+S 
+M 
+R 
+S 
+V 
+T 
+M 
+G 
+R 
+L 
+K 
+D 
+S 
+M 
+F 
+D 
+HH 
+K 
+W 
+K 
+K 
+B 
+Y 
+S 
+W 
+F 
+D 
+B 
+JH 
+P 
+D 
+L 
+K 
+R 
+M 
+JH 
+L 
+S 
+N 
+T 
+R 
+M 
+Z 
+B 
+B 
+R 
+T 
+R 
+P 
+R 
+L 
+F 
+R 
+HH 
+HH 
+S 
+CH 
+D 
+N 
+M 
+B 
+D 
+W 
+K 
+F 
+L 
+S 
+T 
+R 
+N 
+T 
+S 
+P 
+L 
+S 
+K 
+S 
+W 
+R 
+M 
+T 
+T 
+R 
+N 
+T 
+K 
+P 
+R 
+M 
+S 
+G 
+M 
+P 
+M 
+W 
+K 
+B 
+M 
+F 
+W 
+K 
+F 
+CH 
+D 
+P 
+S 
+S 
+S 
+W 
+F 
+K 
+P 
+Y 
+W 
+L 
+D 
+K 
+CH 
+F 
+R 
+T 
+S 
+B 
+TH 
+K 
+T 
+S 
+HH 
+M 
+T 
+L 
+G 
+B 
+V 
+S 
+L 
+F 
+P 
+N 
+R 
+P 
+D 
+B 
+S 
+K 
+R 
+V 
+P 
+S 
+JH 
+L 
+JH 
+P 
+B 
+JH 
+HH 
+R 
+CH 
+K 
+D 
+K 
+P 
+K 
+P 
+B 
+D 
+M 
+Y 
+W 
+W 
+K 
+L 
+W 
+D 
+B 
+F 
+R 
+S 
+S 
+M 
+D 
+K 
+D 
+V 
+T 
+D 
+P 
+M 
+K 
+T 
+D 
+CH 
+S 
+B 
+SH 
+P 
+P 
+D 
+S 
+K 
+B 
+P 
+JH 
+R 
+HH 
+R 
+D 
+B 
+N 
+S 
+N 
+M 
+D 
+D 
+M 
+JH 
+HH 
+V 
+S 
+R 
+G 
+G 
+B 
+F 
+K 
+D 
+D 
+D 
+R 
+P 
+HH 
+D 
+D 
+S 
+P 
+R 
+W 
+G 
+P 
+V 
+L 
+G 
+D 
+N 
+T 
+K 
+S 
+S 
+P 
+F 
+R 
+SH 
+S 
+L 
+F 
+D 
+R 
+D 
+P 
+R 
+HH 
+F 
+R 
+N 
+HH 
+T 
+M 
+F 
+HH 
+F 
+K 
+P 
+P 
+S 
+R 
+D 
+F 
+W 
+TH 
+D 
+R 
+P 
+Z 
+R 
+R 
+R 
+M 
+P 
+S 
+D 
+D 
+S 
+D 
+P 
+P 
+F 
+D 
+K 
+P 
+S 
+D 
+F 
+V 
+P 
+K 
+P 
+S 
+F 
+D 
+P 
+M 
+S 
+S 
+G 
+K 
+B 
+R 
+S 
+P 
+F 
+N 
+G 
+R 
+L 
+F 
+K 
+HH 
+K 
+V 
+T 
+D 
+R 
+W 
+R 
+M 
+W 
+D 
+P 
+CH 
+W 
+K 
+HH 
+B 
+M 
+R 
+L 
+N 
+M 
+S 
+K 
+CH 
+K 
+M 
+S 
+L 
+D 
+S 
+R 
+K 
+K 
+B 
+G 
+M 
+K 
+R 
+F 
+L 
+M 
+R 
+S 
+L 
+F 
+K 
+R 
+P 
+L 
+V 
+W 
+L 
+N 
+S 
+F 
+R 
+D 
+JH 
+B 
+R 
+K 
+SH 
+M 
+S 
+K 
+T 
+F 
+HH 
+S 
+HH 
+P 
+D 
+P 
+CH 
+P 
+K 
+T 
+D 
+HH 
+S 
+B 
+R 
+S 
+M 
+R 
+R 
+CH 
+D 
+P 
+D 
+W 
+S 
+S 
+P 
+F 
+V 
+Y 
+B 
+HH 
+R 
+D 
+P 
+D 
+Y 
+N 
+W 
+P 
+T 
+B 
+K 
+F 
+K 
+T 
+TH 
+D 
+CH 
+L 
+M 
+W 
+S 
+R 
+TH 
+K 
+M 
+D 
+T 
+R 
+L 
+SH 
+K 
+CH 
+B 
+B 
+F 
+N 
+W 
+S 
+P 
+T 
+R 
+T 
+HH 
+F 
+S 
+CH 
+SH 
+D 
+R 
+R 
+L 
+K 
+L 
+K 
+D 
+B 
+K 
+TH 
+N 
+S 
+T 
+T 
+CH 
+D 
+W 
+M 
+L 
+M 
+S 
+HH 
+Y 
+M 
+K 
+R 
+D 
+R 
+N 
+D 
+V 
+CH 
+N 
+Y 
+R 
+R 
+P 
+D 
+L 
+HH 
+F 
+P 
+R 
+W 
+F 
+B 
+K 
+TH 
+D 
+M 
+CH 
+V 
+P 
+F 
+K 
+M 
+S 
+N 
+D 
+M 
+K 
+M 
+D 
+R 
+P 
+R 
+TH 
+T 
+HH 
+R 
+D 
+D 
+T 
+M 
+CH 
+P 
+P 
+R 
+K 
+R 
+Z 
+B 
+HH 
+G 
+M 
+R 
+SH 
+G 
+M 
+M 
+W 
+S 
+K 
+G 
+CH 
+M 
+B 
+K 
+T 
+B 
+N 
+R 
+P 
+K 
+K 
+P 
+V 
+SH 
+K 
+M 
+B 
+R 
+F 
+B 
+T 
+R 
+T 
+S 
+R 
+S 
+R 
+R 
+R 
+S 
+D 
+D 
+S 
+G 
+JH 
+R 
+D 
+R 
+K 
+V 
+D 
+M 
+L 
+K 
+W 
+F 
+P 
+HH 
+R 
+S 
+K 
+P 
+K 
+K 
+B 
+S 
+S 
+B 
+R 
+R 
+K 
+S 
+K 
+S 
+R 
+K 
+D 
+R 
+R 
+K 
+D 
+V 
+R 
+F 
+D 
+K 
+S 
+S 
+P 
+S 
+N 
+N 
+R 
+L 
+T 
+F 
+N 
+R 
+B 
+T 
+M 
+R 
+M 
+HH 
+K 
+W 
+W 
+D 
+T 
+R 
+D 
+D 
+L 
+K 
+B 
+F 
+JH 
+T 
+L 
+HH 
+S 
+S 
+JH 
+HH 
+L 
+R 
+M 
+CH 
+V 
+L 
+T 
+M 
+P 
+D 
+D 
+M 
+V 
+D 
+P 
+W 
+W 
+S 
+R 
+P 
+R 
+HH 
+HH 
+S 
+S 
+D 
+T 
+L 
+S 
+D 
+P 
+P 
+K 
+K 
+V 
+SH 
+S 
+R 
+L 
+W 
+B 
+HH 
+P 
+K 
+JH 
+R 
+M 
+D 
+M 
+R 
+N 
+W 
+M 
+M 
+D 
+CH 
+D 
+B 
+L 
+S 
+M 
+K 
+P 
+D 
+K 
+F 
+S 
+M 
+R 
+T 
+S 
+R 
+M 
+M 
+D 
+M 
+M 
+L 
+S 
+D 
+F 
+F 
+F 
+T 
+V 
+M 
+W 
+K 
+S 
+W 
+R 
+M 
+R 
+S 
+P 
+D 
+D 
+V 
+K 
+D 
+R 
+D 
+F 
+D 
+M 
+F 
+HH 
+CH 
+S 
+N 
+N 
+HH 
+TH 
+B 
+D 
+K 
+N 
+T 
+G 
+D 
+P 
+M 
+JH 
+L 
+R 
+D 
+P 
+V 
+R 
+K 
+B 
+V 
+B 
+P 
+B 
+T 
+G 
+S 
+M 
+JH 
+K 
+P 
+JH 
+W 
+W 
+S 
+N 
+T 
+D 
+R 
+F 
+P 
+K 
+M 
+R 
+D 
+L 
+K 
+S 
+R 
+B 
+F 
+D 
+B 
+T 
+R 
+Y 
+SH 
+K 
+K 
+P 
+N 
+K 
+SH 
+R 
+K 
+M 
+TH 
+JH 
+SH 
+B 
+K 
+G 
+R 
+D 
+K 
+B 
+K 
+D 
+F 
+L 
+D 
+R 
+P 
+D 
+V 
+M 
+F 
+K 
+R 
+HH 
+F 
+S 
+S 
+W 
+P 
+R 
+L 
+S 
+HH 
+P 
+M 
+M 
+P 
+HH 
+D 
+CH 
+F 
+W 
+D 
+P 
+L 
+L 
+G 
+R 
+K 
+K 
+SH 
+R 
+M 
+TH 
+S 
+K 
+P 
+K 
+V 
+N 
+S 
+T 
+S 
+L 
+R 
+R 
+B 
+S 
+R 
+P 
+F 
+R 
+D 
+K 
+M 
+L 
+W 
+D 
+P 
+SH 
+K 
+R 
+S 
+K 
+Z 
+T 
+M 
+P 
+L 
+V 
+L 
+R 
+M 
+T 
+D 
+R 
+CH 
+D 
+M 
+SH 
+B 
+F 
+M 
+S 
+SH 
+F 
+T 
+T 
+K 
+R 
+D 
+K 
+G 
+B 
+D 
+P 
+D 
+W 
+K 
+P 
+F 
+B 
+T 
+N 
+V 
+B 
+B 
+R 
+N 
+L 
+R 
+T 
+K 
+S 
+M 
+CH 
+TH 
+B 
+R 
+B 
+S 
+V 
+M 
+D 
+T 
+N 
+JH 
+D 
+D 
+R 
+S 
+L 
+V 
+K 
+K 
+P 
+W 
+B 
+B 
+G 
+V 
+L 
+R 
+R 
+L 
+B 
+L 
+S 
+B 
+P 
+S 
+T 
+P 
+D 
+W 
+K 
+K 
+HH 
+JH 
+S 
+K 
+D 
+D 
+F 
+SH 
+P 
+D 
+K 
+N 
+P 
+B 
+F 
+B 
+M 
+D 
+F 
+P 
+L 
+R 
+T 
+D 
+M 
+T 
+M 
+W 
+P 
+B 
+G 
+L 
+K 
+B 
+R 
+L 
+D 
+D 
+M 
+T 
+D 
+S 
+D 
+T 
+P 
+S 
+R 
+F 
+T 
+M 
+M 
+S 
+B 
+P 
+L 
+F 
+L 
+K 
+K 
+M 
+R 
+W 
+N 
+S 
+K 
+K 
+D 
+R 
+D 
+P 
+B 
+K 
+B 
+R 
+M 
+S 
+D 
+T 
+P 
+B 
+P 
+N 
+B 
+K 
+Z 
+F 
+HH 
+HH 
+R 
+S 
+P 
+F 
+S 
+G 
+M 
+K 
+T 
+CH 
+HH 
+D 
+M 
+L 
+P 
+M 
+R 
+R 
+B 
+S 
+S 
+F 
+S 
+L 
+S 
+G 
+R 
+M 
+T 
+TH 
+P 
+R 
+L 
+V 
+P 
+B 
+S 
+F 
+P 
+K 
+L 
+M 
+T 
+R 
+T 
+P 
+S 
+Y 
+SH 
+B 
+R 
+K 
+K 
+B 
+P 
+Y 
+V 
+HH 
+TH 
+T 
+HH 
+F 
+M 
+D 
+S 
+W 
+S 
+W 
+N 
+S 
+P 
+M 
+R 
+P 
+R 
+W 
+N 
+P 
+R 
+M 
+L 
+R 
+S 
+D 
+P 
+S 
+G 
+T 
+L 
+R 
+SH 
+L 
+T 
+S 
+S 
+P 
+K 
+R 
+Y 
+SH 
+P 
+P 
+D 
+R 
+K 
+F 
+P 
+M 
+W 
+K 
+P 
+R 
+D 
+S 
+R 
+L 
+R 
+F 
+S 
+S 
+D 
+K 
+R 
+S 
+HH 
+JH 
+B 
+D 
+F 
+SH 
+K 
+R 
+D 
+M 
+R 
+K 
+S 
+F 
+M 
+B 
+Z 
+T 
+K 
+K 
+SH 
+F 
+G 
+V 
+W 
+S 
+W 
+F 
+JH 
+W 
+K 
+SH 
+D 
+R 
+F 
+K 
+T 
+V 
+K 
+V 
+JH 
+S 
+S 
+D 
+K 
+M 
+K 
+Y 
+R 
+Y 
+V 
+S 
+K 
+HH 
+SH 
+W 
+R 
+R 
+S 
+R 
+R 
+S 
+T 
+T 
+R 
+W 
+W 
+F 
+HH 
+F 
+F 
+P 
+K 
+M 
+K 
+M 
+SH 
+R 
+T 
+K 
+M 
+F 
+T 
+P 
+Y 
+R 
+R 
+D 
+P 
+D 
+R 
+F 
+D 
+N 
+K 
+T 
+SH 
+Y 
+M 
+P 
+S 
+D 
+R 
+HH 
+JH 
+N 
+R 
+M 
+K 
+P 
+JH 
+R 
+T 
+M 
+B 
+S 
+M 
+D 
+T 
+P 
+N 
+W 
+P 
+T 
+M 
+HH 
+S 
+V 
+K 
+S 
+D 
+M 
+K 
+B 
+B 
+SH 
+K 
+F 
+JH 
+R 
+K 
+R 
+K 
+Y 
+D 
+M 
+N 
+D 
+R 
+T 
+R 
+L 
+K 
+F 
+SH 
+L 
+R 
+R 
+Y 
+F 
+G 
+K 
+D 
+P 
+R 
+F 
+R 
+T 
+HH 
+HH 
+B 
+F 
+L 
+P 
+F 
+L 
+HH 
+R 
+T 
+R 
+D 
+S 
+HH 
+S 
+T 
+S 
+K 
+P 
+SH 
+G 
+T 
+T 
+T 
+L 
+T 
+D 
+S 
+B 
+S 
+L 
+B 
+R 
+HH 
+S 
+F 
+B 
+V 
+R 
+V 
+M 
+K 
+N 
+R 
+K 
+B 
+S 
+S 
+D 
+D 
+G 
+L 
+T 
+S 
+M 
+P 
+R 
+G 
+R 
+B 
+N 
+F 
+W 
+F 
+K 
+P 
+D 
+T 
+B 
+S 
+HH 
+R 
+S 
+P 
+M 
+B 
+L 
+CH 
+P 
+T 
+K 
+S 
+P 
+CH 
+M 
+D 
+N 
+N 
+D 
+Z 
+K 
+G 
+P 
+D 
+F 
+D 
+R 
+S 
+B 
+W 
+L 
+S 
+B 
+N 
+L 
+R 
+K 
+S 
+HH 
+K 
+B 
+B 
+S 
+K 
+L 
+M 
+L 
+M 
+R 
+B 
+D 
+R 
+D 
+F 
+L 
+HH 
+D 
+L 
+V 
+Y 
+S 
+K 
+D 
+K 
+K 
+G 
+B 
+S 
+P 
+B 
+JH 
+K 
+D 
+R 
+G 
+T 
+D 
+V 
+B 
+P 
+D 
+L 
+K 
+R 
+W 
+T 
+TH 
+M 
+K 
+N 
+M 
+M 
+S 
+L 
+B 
+F 
+S 
+M 
+P 
+L 
+P 
+N 
+K 
+D 
+D 
+B 
+T 
+R 
+Y 
+P 
+D 
+S 
+S 
+HH 
+F 
+R 
+S 
+JH 
+D 
+P 
+S 
+T 
+W 
+F 
+HH 
+HH 
+SH 
+P 
+S 
+SH 
+D 
+S 
+D 
+R 
+M 
+L 
+CH 
+TH 
+M 
+R 
+R 
+M 
+S 
+JH 
+M 
+D 
+D 
+L 
+D 
+R 
+W 
+S 
+S 
+D 
+S 
+K 
+N 
+M 
+S 
+Y 
+JH 
+V 
+B 
+JH 
+T 
+SH 
+N 
+D 
+Y 
+B 
+P 
+K 
+K 
+D 
+N 
+M 
+N 
+L 
+K 
+S 
+TH 
+K 
+F 
+B 
+K 
+K 
+P 
+S 
+D 
+TH 
+K 
+D 
+K 
+N 
+B 
+S 
+D 
+B 
+B 
+D 
+F 
+B 
+R 
+P 
+R 
+P 
+M 
+V 
+N 
+B 
+D 
+V 
+S 
+T 
+D 
+HH 
+G 
+HH 
+S 
+M 
+D 
+S 
+B 
+D 
+L 
+P 
+N 
+S 
+S 
+HH 
+S 
+M 
+S 
+P 
+M 
+HH 
+S 
+D 
+D 
+L 
+S 
+P 
+B 
+W 
+K 
+HH 
+B 
+K 
+R 
+SH 
+B 
+R 
+G 
+S 
+R 
+F 
+R 
+K 
+R 
+K 
+B 
+K 
+M 
+R 
+D 
+S 
+M 
+T 
+CH 
+G 
+R 
+P 
+G 
+B 
+N 
+R 
+D 
+N 
+B 
+HH 
+M 
+P 
+W 
+JH 
+W 
+S 
+L 
+W 
+K 
+L 
+L 
+K 
+M 
+D 
+D 
+P 
+HH 
+G 
+G 
+W 
+R 
+K 
+V 
+M 
+M 
+R 
+P 
+F 
+K 
+S 
+M 
+K 
+P 
+D 
+F 
+L 
+M 
+M 
+T 
+D 
+P 
+K 
+R 
+P 
+R 
+P 
+R 
+M 
+S 
+D 
+R 
+TH 
+M 
+K 
+B 
+M 
+S 
+K 
+W 
+HH 
+K 
+G 
+P 
+JH 
+M 
+R 
+L 
+F 
+T 
+K 
+D 
+M 
+K 
+W 
+M 
+HH 
+D 
+JH 
+F 
+P 
+HH 
+G 
+L 
+F 
+P 
+R 
+L 
+R 
+N 
+W 
+N 
+SH 
+SH 
+L 
+G 
+P 
+B 
+TH 
+D 
+K 
+B 
+S 
+D 
+D 
+P 
+D 
+T 
+K 
+R 
+P 
+D 
+CH 
+S 
+P 
+P 
+S 
+K 
+D 
+G 
+D 
+S 
+B 
+JH 
+V 
+D 
+P 
+R 
+N 
+K 
+V 
+K 
+D 
+M 
+D 
+N 
+P 
+V 
+D 
+B 
+G 
+S 
+D 
+R 
+M 
+F 
+D 
+L 
+S 
+S 
+R 
+B 
+F 
+T 
+F 
+B 
+D 
+B 
+S 
+F 
+P 
+B 
+B 
+B 
+S 
+S 
+S 
+K 
+B 
+P 
+S 
+S 
+P 
+B 
+K 
+B 
+HH 
+N 
+P 
+V 
+L 
+L 
+P 
+W 
+Y 
+P 
+R 
+R 
+T 
+L 
+CH 
+R 
+D 
+K 
+D 
+D 
+V 
+D 
+R 
+S 
+SH 
+F 
+HH 
+D 
+L 
+K 
+D 
+P 
+HH 
+K 
+P 
+D 
+S 
+D 
+D 
+N 
+S 
+P 
+F 
+D 
+B 
+L 
+HH 
+R 
+Y 
+W 
+T 
+K 
+T 
+D 
+P 
+SH 
+S 
+R 
+F 
+P 
+K 
+R 
+K 
+P 
+D 
+G 
+R 
+B 
+N 
+R 
+S 
+B 
+D 
+P 
+S 
+D 
+K 
+M 
+M 
+V 
+HH 
+S 
+K 
+N 
+B 
+F 
+JH 
+B 
+T 
+N 
+W 
+D 
+B 
+HH 
+P 
+R 
+D 
+D 
+R 
+R 
+F 
+M 
+R 
+W 
+P 
+D 
+R 
+R 
+K 
+G 
+R 
+L 
+S 
+P 
+M 
+M 
+K 
+N 
+B 
+F 
+P 
+M 
+L 
+P 
+F 
+S 
+S 
+HH 
+JH 
+L 
+Y 
+R 
+R 
+V 
+R 
+Y 
+T 
+K 
+M 
+HH 
+B 
+Y 
+S 
+R 
+N 
+F 
+P 
+T 
+P 
+HH 
+W 
+S 
+K 
+S 
+N 
+B 
+N 
+W 
+Z 
+V 
+S 
+L 
+B 
+K 
+T 
+M 
+P 
+D 
+B 
+M 
+K 
+D 
+B 
+S 
+N 
+K 
+P 
+D 
+T 
+HH 
+T 
+TH 
+TH 
+K 
+R 
+S 
+R 
+L 
+HH 
+B 
+L 
+S 
+CH 
+M 
+K 
+F 
+K 
+B 
+HH 
+F 
+R 
+N 
+F 
+D 
+K 
+D 
+P 
+JH 
+B 
+T 
+D 
+W 
+HH 
+M 
+P 
+M 
+R 
+G 
+N 
+M 
+T 
+B 
+R 
+K 
+R 
+L 
+S 
+B 
+R 
+T 
+W 
+W 
+D 
+G 
+T 
+P 
+B 
+W 
+W 
+M 
+D 
+V 
+SH 
+M 
+HH 
+M 
+N 
+S 
+L 
+G 
+P 
+L 
+D 
+K 
+B 
+R 
+M 
+M 
+R 
+S 
+R 
+N 
+S 
+D 
+CH 
+K 
+M 
+D 
+R 
+M 
+B 
+L 
+S 
+F 
+V 
+F 
+Y 
+L 
+N 
+D 
+K 
+D 
+B 
+R 
+W 
+CH 
+T 
+R 
+N 
+S 
+S 
+D 
+P 
+M 
+K 
+R 
+L 
+R 
+L 
+R 
+G 
+R 
+K 
+K 
+L 
+T 
+HH 
+JH 
+B 
+G 
+HH 
+V 
+R 
+HH 
+M 
+M 
+R 
+G 
+S 
+N 
+T 
+P 
+P 
+HH 
+N 
+B 
+T 
+HH 
+S 
+R 
+B 
+B 
+T 
+T 
+B 
+HH 
+JH 
+K 
+B 
+B 
+HH 
+F 
+G 
+K 
+W 
+K 
+HH 
+K 
+L 
+K 
+L 
+R 
+B 
+L 
+G 
+P 
+P 
+R 
+HH 
+HH 
+D 
+T 
+R 
+S 
+P 
+JH 
+R 
+HH 
+D 
+W 
+M 
+P 
+R 
+N 
+N 
+N 
+F 
+K 
+B 
+G 
+D 
+F 
+D 
+B 
+F 
+W 
+D 
+R 
+F 
+R 
+V 
+P 
+M 
+SH 
+JH 
+G 
+Y 
+JH 
+P 
+P 
+K 
+D 
+R 
+D 
+R 
+N 
+M 
+W 
+L 
+P 
+P 
+R 
+T 
+D 
+CH 
+S 
+K 
+F 
+HH 
+M 
+K 
+R 
+K 
+K 
+HH 
+R 
+P 
+L 
+S 
+N 
+B 
+F 
+P 
+D 
+R 
+F 
+P 
+D 
+K 
+P 
+B 

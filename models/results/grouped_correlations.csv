@@ -1,7 +1,7 @@
 attestedness,term,likert_rating
 attested,smoothed_bigram,0.24469853114372656
 attested,hayes_phonetic_features,0.2610117665533083
-attested,hayes_learned_features,0.24469853114372656
+attested,hayes_learned_features,0.23895541720358165
 attested,bl_continuous_pmi,0.26031385049598
 attested,bl_discrete_binary_phonetic,0.21533470740647936
 attested,bl_discrete_binary_learned,0.31647676694588633
@@ -11,7 +11,7 @@ attested,max_sc_cov,0.28290527495696594
 attested,max_sc_kld,0.1431283295418989
 marginal,smoothed_bigram,-0.004504687313477794
 marginal,hayes_phonetic_features,0.30181405000301226
-marginal,hayes_learned_features,0.13964530671781164
+marginal,hayes_learned_features,0.06757030970216692
 marginal,bl_continuous_pmi,0.17437798582590866
 marginal,bl_discrete_binary_phonetic,0.24775780224127872
 marginal,bl_discrete_binary_learned,0.1846921798525896
@@ -21,7 +21,7 @@ marginal,max_sc_cov,0.1718107983722728
 marginal,max_sc_kld,-0.25017164437312167
 unattested,smoothed_bigram,0.2800386774862153
 unattested,hayes_phonetic_features,0.37436749516578255
-unattested,hayes_learned_features,0.3065686574585936
+unattested,hayes_learned_features,0.49817406837021455
 unattested,bl_continuous_pmi,0.5218693408866891
 unattested,bl_discrete_binary_phonetic,0.37731527071826904
 unattested,bl_discrete_binary_learned,0.27119535082875584
