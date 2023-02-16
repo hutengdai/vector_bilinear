@@ -10,17 +10,11 @@ from os import path
 
 N = 2
 
-model_map = {
-    'kn': KneserNeyInterpolated,
-}
-
 def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec, 
-                           discard_duplicates, model):
+                           discard_duplicates):
     if not model_name:
         # Model name is dataset + weighting if not specified
         model_name = path.split(dataset)[-1].split('.')[0] + "_{}".format(weighting)
-
-    MODEL = model_map['model']
 
     # Read in data and add padding symbols
     with open(dataset, 'r') as f:
@@ -41,13 +35,13 @@ def create_weighted_matrix(dataset, weighting, model_name, outdir, word2vec,
     # Train forwards LM to get prfobabilities for X _ contexts
     f_train, f_vocab = padded_everygram_pipeline(N, tokens)
 
-    f_model = MODEL(N)
+    f_model = KneserNeyInterpolated(N)
     f_model.fit(f_train, f_vocab)
 
     # Train backwards LM to get probabiliteis for _ X contexts
     reversed_tokens = [list(reversed(token)) for token in tokens]
     b_train, b_vocab = padded_everygram_pipeline(N, reversed_tokens)
-    b_model = MODEL(N)
+    b_model = KneserNeyInterpolated(N)
     b_model.fit(b_train, b_vocab)
 
     # Create (P)PMI matrix for both models independently
@@ -181,10 +175,6 @@ if __name__ == "__main__":
     parser.add_argument(
         '--discard_duplicates', action="store_true",
         help="Throw out duplicate tokens"
-    )
-    parser.add_argument(
-        '--model', type='str', default = 'kn',
-        help='LM to use'
     )
 
     args = parser.parse_args()
