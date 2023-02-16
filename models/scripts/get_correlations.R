@@ -3,8 +3,8 @@ library(corrr)
 library(GGally)
 library(ggrepel)
 
-#setwd("E:/git_repos/DFM/models")
-setwd("C:/Users/conno/git_repos/vector_bilinear/models")
+setwd("E:/git_repos/DFM/models")
+#setwd("C:/Users/conno/git_repos/vector_bilinear/models")
 
 scores_full <- read_csv("results/overall_scores.csv")
 
@@ -14,12 +14,10 @@ scores_full <- scores_full %>%
          bl_continuous_pmi = -bl_continuous_pmi,
          bl_discrete_binary_phonetic = -bl_discrete_binary_phonetic,
          bl_discrete_binary_learned = -bl_discrete_binary_learned,
-         bl_continuous_lm_token = -bl_continuous_lm_token,
-         bl_continuous_lm_laplace = -bl_continuous_lm_laplace,
-         hayes_learned_features_lm_token = -hayes_learned_features_lm_token,
-         bl_discrete_lm_token = -bl_discrete_lm_token,
-         bl_continuous_lm_type_1 = -bl_continuous_lm_type_1,
-         bl_continuous_lm_type_2 = -bl_continuous_lm_type_2
+         
+         bl_continuous_lm_run_1 = -bl_continuous_lm_run_1,
+         bl_continuous_lm_run_2 = -bl_continuous_lm_run_2,
+         hayes_learned_features_lm = -hayes_learned_features_lm,
   ) %>%
   select(-max_rcc_cov, -max_rcc_kld, -max_sc_kld)
 
