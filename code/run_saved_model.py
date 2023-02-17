@@ -10,7 +10,7 @@ def main(model_filename, data_filename, out_filename):
 	
 	model = torch.load(model_filename)
 	# model.bilinear
-	# breakpoint()
+	breakpoint()
 	with open(out_filename, "w", newline= "") as outfile:
 		writer = csv.writer(outfile)
 		with open(data_filename, newline= "") as infile:
