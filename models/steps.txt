@@ -8,7 +8,7 @@ python3.10 VectorModelBuilder.py ../../models/training_data/onset_type_frequenci
 
 python3.10 clusterer.py ../../models/embeddings/onset_type_frequencies_bigram_pmi ../../models/learned_classes/onset_type_frequencies_bigram_1_5.csv --no_constrain_initial_partition --v_scalar 1
 
-# Add singleton classes?
+# Add singleton classes
 
 # Convert learned classes to discrete classes
 
