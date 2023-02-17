@@ -39,7 +39,6 @@ python code/bilinear.py input/training_toy_noCC_bigram_pmi_word2vec.w2v input/tr
 <!-- Run lm_embeddings_2-->
 python code/bilinear.py models/embeddings/lm_embeddings_2/onset_type_frequencies_pmi.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/onset_type_frequencies_pmi_2_15.pt
 
-
 python code/bilinear.py models/embeddings/laplace_embeddings/onset_type_frequencies_bigram_pmi_word2vec.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/onset_type_frequencies_bigram_pmi_word2vec_2_15.pt
 
 python code/bilinear.py models/embeddings/lm_embeddings_3/type_embeddings_token_counts.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/type_embeddings_token_counts.pt
