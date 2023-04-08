@@ -46,7 +46,6 @@ python code/bilinear.py models/embeddings/lm_embeddings_3/type_embeddings_token_
 python code/bilinear.py models/embeddings/lm_type_embeddings_pmi/lm_type_embeddings_pmi_discrete.w2v input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 --dev input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 --lr 0.001 --batch_size 64 --no_encoders --num_iter 881 --output_filename result/lm_type_embeddings_pmi_discrete.pt
 
 
-
 <!--  OLD command (output everything in the terminal to binary1.csv):
 - for binary features
 python run_learning_model.py ./input/english_binary_features.w2v ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_1 ./input/onset_tokens_arpa_bigram_ppmi_word2vec.ngrams_2 ./result/binary1.csv
@@ -82,6 +81,8 @@ python code/run_saved_model.py result/onset_type_frequencies_pmi_2_15.pt input/t
 
 
 python code/run_saved_model.py result/type_embeddings_token_counts.pt input/test_data_daland_et_al_arpa_onset_only.txt result/type_embeddings_token_counts.txt
+
+python code/run_saved_model.py result/lm_type_embeddings_pmi_discrete.pt input/test_data_daland_et_al_arpa_onset_only.txt result/lm_type_embeddings_pmi_discrete.txt
 
 python code/run_saved_model.py result/lm_type_embeddings_pmi_discrete.pt input/test_data_daland_et_al_arpa_onset_only.txt result/lm_type_embeddings_pmi_discrete.txt
 
