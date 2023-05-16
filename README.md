@@ -1,4 +1,4 @@
-# DFM Project
+# Rethinking representations: A log-bilinear model of phonotactics
 
 This repository hosts a collaborative project by Huteng Dai, Richard Futrell and Connor Mayer, focusing on phonotactics modelling using large-scale corpus data. The project revolves around testing our hypothesis on judgment data of English nonce words based on the study by Daland et al. in 2011.
 
