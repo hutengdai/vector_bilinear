@@ -53,9 +53,4 @@ For analyzing the testing results, we load the PyTorch model and create heatmaps
 - The X-axis in the heatmap represents the preceding context.
 - The binary and ternary feature files (w2v) miss features for the word boundary.
 
-### Future Works (TODO)
 
-- Compare tied and untied models.
-- Investigate attestedness.
-- Calculate correlations for all tested models and present them in a table.
-- Analyze model scores across three attestedness categories.
