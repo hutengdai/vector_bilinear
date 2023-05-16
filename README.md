@@ -51,6 +51,6 @@ For analyzing the testing results, we load the PyTorch model and create heatmaps
 #### Note
 
 - The X-axis in the heatmap represents the preceding context.
-- The binary and ternary feature files (w2v) miss features for the word boundary.
+- The binary and ternary feature files (w2v) miss features for the word boundary (fixed).
 
 
